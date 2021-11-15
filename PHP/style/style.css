@@ -1,0 +1,64 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.lecturePageVideo{
+    width: 100%;
+    margin-top: 1vw;
+}
+
+.lecturePageImg{
+    text-align: left;
+    width: 83vw;
+}
+
+.lecturePageProgressBar{
+    position: relative;
+    display: inline-block;
+    text-align: left;
+    top: -4px;
+    width: 83vw;
+    height: 10px;
+    background-color: gray;
+}
+
+.lecturePageProgressBar::before{
+    content: "";
+    position: relative;
+    display: inline-block;
+    top: -4px;
+    width: 30%;
+    height: 10px;
+    background-color: red;
+}
+
+.lecturePageInformations{
+    position: absolute;
+    display: flex;
+    text-align: center;
+    width: 83vw;
+    left: 9vw;
+}
+
+.lecturePageInformations_1{
+    display: inline-block;
+    width: 33%;
+}
+
+.lecturePageInformations_2{
+    display: inline-block;
+    width: 33%;
+}
+
+.lecturePageInformations_3  {
+    display: inline-block;
+    width: 33%;
+    top: 0;
+}
