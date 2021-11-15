@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    --couleurGrisClair: #DFE6ED;
+    --couleurBleuFonce: darkblue;
+    --couleurNoir: #272727;
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: var(--couleurGrisClair);
+}
+
+.indexLogo, h1{
+    display: inline-block;
+    font-size: 80px;
+    font-weight: bolder;
+    color: var(--couleurBleuFonce);
+}
+
+.indexLogo{
+    margin: 0 50px 0 5%;
+}
+
+.indexLogo{
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ion-icon {
+    --ionicon-stroke-width: 50px;
+
+}
+
+.indexTitre{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.indexDivBoutons{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    top: 20px;
+    right: 5%;
+}
+
+.indexBoutonMenu{
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    background-color: var(--couleurBleuFonce);
+    border-radius: 10px;
+    font-size: 1.5rem;
+    height: 50px;
+    padding: 5px;
+    text-decoration: none;
+    color: var(--couleurGrisClair);
+    margin: 10px 0;
+    z-index: 2;
+}
+
+.indexInput{
+    background-color: white;
+    width: 350%;
+    height: 50px;
+    padding: 10px 0 10px 50px;
+    border-radius: 10px;
+    margin:-60px 0 0 calc(-350% + 20%);
+}
+
+input{
+    width: 100%;
+    border: none;
+    font-size: 1.5rem;
+}
+
+.indexRecommandation{
+    margin-top: 150px;
+    display: flex;
+    flex-direction: row;
+}
+
+h2, h3{
+    color: var(--couleurBleuFonce);
+    font-weight: bold;
+}
+
+.indexAfficheFilmRecommande{
+    margin: 10px 10px 10px 5%;
+    border-radius: 10px;
+}
+
+.indexDescriptionFilm{
+    width: 70%;
+}
+
+
