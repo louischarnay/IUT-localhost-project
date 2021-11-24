@@ -2,7 +2,7 @@ from collections import defaultdict
 
 from surprise import SVD
 from surprise import Dataset
-
+from surprise import Reader
 
 def get_top_n(predictions, n=10):
     """Return the top-N recommendation for each user from a set of predictions.
@@ -32,12 +32,20 @@ def get_top_n(predictions, n=10):
 
 
 # First train an SVD algorithm on the movielens dataset.
-data = Dataset.load_builtin('ml-100k')
+
+file_path = 'ratings.csv'
+
+reader = Reader(line_format='user item rating timestamp', sep=',')
+
+print("loading file")
+data = Dataset.load_from_file(file_path, reader=reader)
+
 trainset = data.build_full_trainset()
 algo = SVD()
 algo.fit(trainset)
 
 # Than predict ratings for all pairs (u, i) that are NOT in the training set.
+print("training...")
 testset = trainset.build_anti_testset()
 predictions = algo.test(testset)
 
