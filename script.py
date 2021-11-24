@@ -52,5 +52,10 @@ predictions = algo.test(testset)
 top_n = get_top_n(predictions, n=10)
 
 # Print the recommended items for each user
+file=open("recommendation.csv",'w')
+
 for uid, user_ratings in top_n.items():
+    file.write(uid + str([iid for (iid, _) in user_ratings]) + '\n')
     print(uid, [iid for (iid, _) in user_ratings])
+
+file.close()
