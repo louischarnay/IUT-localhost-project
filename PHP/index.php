@@ -7,23 +7,25 @@
     <link rel="stylesheet" href="/style/style.css">
 </head>
 <body>
-<header>
-    <div class="indexTitre">
+<header class="indexHeader">
+    <div class="indexHeaderDiv">
         <div class="indexLogo">
             <ion-icon name="diamond-outline"></ion-icon>
         </div>
-        <h1>Second Films</h1>
-    </div>
-    <div class="indexDivBoutons">
-        <a href="#" class="indexBoutonMenu">Profil</a>
-        <a href="#" class="indexBoutonMenu">Déconnexion</a>
-        <a href="#" class="indexBoutonMenu">Rechercher</a>
-        <div class="indexInput">
-            <input type="text" placeholder="Rechercher">
+        <div class="indexTitre">
+            <h1>Second Films</h1>
+        </div>
+        <div class="indexDivBoutons">
+            <a href="#" class="indexBoutonMenu">Profil</a>
+            <a href="#" class="indexBoutonMenu">Déconnexion</a>
+            <a href="#" class="indexBoutonMenu">Rechercher</a>
         </div>
     </div>
+    <div class="indexInput">
+        <input type="text" placeholder="Rechercher">
+    </div>
 </header>
-<main>
+<main class="indexMain">
     <div class="indexRecommandation">
         <img src="https://picsum.photos/180/240" alt="affiche film recommandé" class="indexAfficheFilmRecommande">
         <div class="indexDescriptionFilm">
