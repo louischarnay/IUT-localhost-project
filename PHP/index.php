@@ -32,11 +32,6 @@
             <div class="indexH2Etoiles">
                 <h2>FILM RECOMMANDE</h2>
                 <div class="indexEtoilesH2">
-                    <ion-icon name="star" class="etoile"></ion-icon>
-                    <ion-icon name="star" class="etoile"></ion-icon>
-                    <ion-icon name="star" class="etoile"></ion-icon>
-                    <ion-icon name="star" class="etoile"></ion-icon>
-                    <ion-icon name="star-outline" class="etoile"></ion-icon>
 
                 </div>
             </div>
@@ -49,35 +44,92 @@
         </div>
     </div>
     <div class="indexCategorie">
-        <h3>CATEGORIE 1</h3>
-        <div class="indexEtoiles"></div>
-        <div class="index"
-        <div class="indexFlecheGauche"></div>
-        <img src="https://picsum.photos/120/160" alt="affiche film 1" class="indexAfficheFilm">
-        <img src="https://picsum.photos/120/160" alt="affiche film 2" class="indexAfficheFilm">
-        <img src="https://picsum.photos/120/160" alt="affiche film 3" class="indexAfficheFilm">
-        <img src="https://picsum.photos/120/160" alt="affiche film 4" class="indexAfficheFilm">
-        <img src="https://picsum.photos/120/160" alt="affiche film 5" class="indexAfficheFilm">
-        <img src="https://picsum.photos/120/160" alt="affiche film 6" class="indexAfficheFilm">
-        <img src="https://picsum.photos/120/160" alt="affiche film 7" class="indexAfficheFilm">
-        <div class="indexFlecheDroite"></div>
+        <div class="indexH3Etoile">
+            <h3>CATEGORIE 1</h3>
+            <div class="indexEtoiles">
+                <ion-icon name="star" class="etoile"></ion-icon>
+                <ion-icon name="star" class="etoile"></ion-icon>
+                <ion-icon name="star" class="etoile"></ion-icon>
+                <ion-icon name="star" class="etoile"></ion-icon>
+                <ion-icon name="star-outline" class="etoile"></ion-icon>
+            </div>
+        </div>
+        <div class="indexLigneCategorie">
+            <div class="indexFlecheGauche"></div>
+            <div class="indexLigneFilms">
+                <img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm">
+                <img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm">
+                <img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm">
+                <img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm">
+                <img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm">
+                <img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm">
+                <img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm">
+                <img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm">
+                <img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm">
+                <img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm">
+                <img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm">
+                <img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm">
+                <img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm">
+                <img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm">
+                <img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm">
+                <img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm">
+                <img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm">
+                <img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm">
+                <img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm">
+                <img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm">
+                <img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm">
+            </div>
+            <div class="indexFlecheDroite"></div>
+        </div>
     </div>
     <div class="indexCategorie">
-        <h3>CATEGORIE 2</h3>
-        <div class="indexEtoiles"></div>
-        <div class="indexFlecheGauche"></div>
-        <img src="https://picsum.photos/120/160" alt="affiche film 1" class="indexAfficheFilm">
-        <img src="https://picsum.photos/120/160" alt="affiche film 2" class="indexAfficheFilm">
-        <img src="https://picsum.photos/120/160" alt="affiche film 3" class="indexAfficheFilm">
-        <img src="https://picsum.photos/120/160" alt="affiche film 4" class="indexAfficheFilm">
-        <img src="https://picsum.photos/120/160" alt="affiche film 5" class="indexAfficheFilm">
-        <img src="https://picsum.photos/120/160" alt="affiche film 6" class="indexAfficheFilm">
-        <img src="https://picsum.photos/120/160" alt="affiche film 7" class="indexAfficheFilm">
-        <div class="indexIlecheDroite"></div>
+        <div class="indexH3Etoile">
+            <h3>CATEGORIE 2</h3>
+            <div class="indexEtoiles">
+                <ion-icon name="star" class="etoile"></ion-icon>
+                <ion-icon name="star" class="etoile"></ion-icon>
+                <ion-icon name="star" class="etoile"></ion-icon>
+                <ion-icon name="star" class="etoile"></ion-icon>
+                <ion-icon name="star-outline" class="etoile"></ion-icon>
+            </div>
+        </div>
+        <div class="indexLigneCategorie">
+            <div class="indexFlecheGauche"></div>
+            <div class="indexLigneFilms">
+                <img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm">
+                <img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm">
+                <img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm">
+                <img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm">
+                <img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm">
+                <img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm">
+                <img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm">
+                <img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm">
+                <img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm">
+                <img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm">
+                <img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm">
+                <img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm">
+                <img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm">
+                <img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm">
+                <img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm">
+                <img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm">
+                <img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm">
+                <img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm">
+                <img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm">
+                <img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm">
+                <img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm">
+            </div>
+            <div class="indexFlecheDroite"></div>
+        </div>
     </div>
 </main>
-<footer>
-
+<footer class="indexFooter">
+    <div class="reseauxSociaux">
+        <ion-icon name="logo-instagram"></ion-icon>
+        <ion-icon name="logo-youtube"></ion-icon>
+        <ion-icon name="logo-facebook"></ion-icon>
+    </div>
+    <p>Louis Charnay | Guillaume Grandy | Benji Vadurel | Pablo Guinard</p>
+    <p>Copyright © 2021</p>
 </footer>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 </body>

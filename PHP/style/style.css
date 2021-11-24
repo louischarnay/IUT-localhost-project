@@ -96,7 +96,7 @@ input{
 }
 
 .indexRecommandation{
-    margin-top: 50px;
+    margin: 50px 0;
     display: flex;
     flex-direction: row;
     width: 70%;
@@ -130,6 +130,39 @@ h2{
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+
+.indexCategorie{
+    width: 90%;
+    margin-bottom: 50px;
+}
+
+.indexH3Etoile{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.indexLigneCategorie{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.indexLigneFilms{
+    display: flex;
+    overflow-x: scroll;
+    flex-direction: row;
+}
+
+.indexAfficheFilm{
+    margin: 0 10px;
+    border-radius: 5px;
+}
+
+.indexFlecheGauche, .indexFlecheDroite{
+    background-color: var(--couleurBleuFonce);
+    width: 50px;
 }
 
 .indexAfficheFilmRecommande{
@@ -195,4 +228,19 @@ h2{
     display: inline-block;
     width: 33%;
     top: 0;
+}
+
+.indexFooter{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px 0;
+    flex-direction: column;
+    height: 100px;
+    background-color: var(--couleurBleuFonce);
+    color: var(--couleurGrisClair);
+}
+
+.reseauxSociaux .md{
+    margin: 0 10px;
 }
