@@ -9,16 +9,60 @@
 </head>
 
 <body>
-    <header>
-
+    <header class="indexHeader">
+        <div class="indexHeaderDiv">
+            <div class="indexLogo">
+                <a href="index.php"><ion-icon name="diamond-outline"></ion-icon></a>
+            </div>
+            <div class="indexTitre">
+                <a href="index.php"><h1>Second Films</h1></a>
+            </div>
+            <div class="indexDivBoutons">
+                <a href="#" class="indexBoutonMenu">Profil</a>
+                <a href="#" class="indexBoutonMenu">Déconnexion</a>
+                <a href="#" class="indexBoutonMenu">Rechercher</a>
+            </div>
+        </div>
+        <div class="indexInput">
+            <input type="text" placeholder="Rechercher">
+        </div>
     </header>
     <main>
         <div class="lecturePageVideo">
             <img class="lecturePageImg" src="https://picsum.photos/1280/720" alt="image">
+            <div class="lectureTools">
+                <ion-icon name="volume-high" class="lectureVolume"></ion-icon>
+                <ion-icon name="play" class="lecturePlay"></ion-icon>
+                <ion-icon name="scan" class="lectureScan"></ion-icon>
+            </div>
             <span class="lecturePageProgressBar"></span>
         </div>
         <div class="lecturePageInformations">
+            
             <div class="lecturePageInformations_1">
+                <h2>TITRE FILM</h2>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi obcaecati alias itaque dolorum quibusdam excepturi modi nemo sequi nihil odit nisi consequatur numquam, esse assumenda sit aspernatur nam quis quia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt incidunt eaque hic odio iusto accusamus quia dolorem quo. Recusandae necessitatibus ut a delectus animi quos labore quod temporibus illo minus!</p>
+            </div>
+            <div class="lecturePageInformations_2">    
+                <br>
+                <h3>Note Globale</h3>
+                <div class="lectureNotation1">
+                    <ion-icon name="star" class="etoile"></ion-icon>
+                    <ion-icon name="star" class="etoile"></ion-icon>
+                    <ion-icon name="star" class="etoile"></ion-icon>
+                    <ion-icon name="star" class="etoile"></ion-icon>
+                    <ion-icon name="star" class="etoile"></ion-icon>
+                </div>
+                <h3>Ma note</h3>
+                <div class="lectureNotation2">
+                    <ion-icon name="star" class="etoile"></ion-icon>
+                    <ion-icon name="star" class="etoile"></ion-icon>
+                    <ion-icon name="star" class="etoile"></ion-icon>
+                    <ion-icon name="star" class="etoile"></ion-icon>
+                    <ion-icon name="star" class="etoile"></ion-icon>
+                </div>
+            </div>
+            <div class="lecturePageInformations_3">
                 <table>
                     <tr>
                         <td><b>Réalisateur :</b></td>
@@ -46,20 +90,8 @@
                     </tr>
                 </table>
             </div>
-            <div class="lecturePageInformations_2">
-                <h2>TITRE FILM</h2>
-                <h3>SOUS TITRE</h3>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi obcaecati alias itaque dolorum quibusdam excepturi modi nemo sequi nihil odit nisi consequatur numquam, esse assumenda sit aspernatur nam quis quia.</p>
-            </div>
-            <div class="lecturePageInformations_3">
-                <h3>Note Globale</h3>
-                <h3>Ma note</h3>
-            </div>
         </div>
-    </main>
-    <footer>
-
-    </footer>
+    </main> 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 </body>
 </html>

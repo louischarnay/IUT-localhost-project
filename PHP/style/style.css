@@ -113,6 +113,11 @@ h2, h3{
     font-weight: bold;
 }
 
+a {
+    text-decoration: none;
+    color: #DFE6ED;
+}
+
 .indexAfficheFilmRecommande{
     margin: 10px 10px 10px 5%;
     border-radius: 10px;
@@ -123,21 +128,59 @@ h2, h3{
 }
 
 .lecturePageVideo{
-    width: 100%;
-    margin-top: 1vw;
+    width: 60%;
 }
 
 .lecturePageImg{
+    position: relative;
     text-align: left;
-    width: 83vw;
+    width: 60vw;
+    left: 1vw;
+    top: 1vw;
+}
+
+.lectureTools {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.712);
+    width: 12vw;
+    height: 3vw;
+    top: -2.3vw;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    left: 43%;
+}
+
+.lecturePlay {
+    position: relative;
+    top: 4px;
+    color: wheat;
+    font-size: 2.5vw;
+}
+
+.lectureVolume{
+    position: relative;
+    top: 4px;
+    color: wheat;
+    font-size: 2.5vw;
+}
+
+.lectureScan{
+    position: relative;
+    top: 4px;
+    color: wheat;
+    font-size: 2.5vw;
 }
 
 .lecturePageProgressBar{
     position: relative;
     display: inline-block;
     text-align: left;
-    top: -4px;
-    width: 83vw;
+    top: -2.4vw;
+    left: 1vw;
+    width: 60vw;
     height: 10px;
     background-color: gray;
 }
@@ -146,32 +189,44 @@ h2, h3{
     content: "";
     position: relative;
     display: inline-block;
-    top: -4px;
+    top: -6px;
     width: 30%;
     height: 10px;
     background-color: red;
 }
 
 .lecturePageInformations{
-    position: absolute;
+    width: 35%;
+    position: relative;
     display: flex;
-    text-align: center;
-    width: 83vw;
-    left: 9vw;
+    flex-direction: column;
+    text-align: justify;
+    top: -37vw;
+    left: 63vw;
+    height: 1vw;
 }
 
-.lecturePageInformations_1{
-    display: inline-block;
-    width: 33%;
+.lectureNotation1 {
+    position: relative;
+    top: -22px;
+    left: 125px;
+    width: 80%;
 }
 
-.lecturePageInformations_2{
-    display: inline-block;
-    width: 33%;
+.lectureNotation2 {
+    position: relative;
+    top: -22px;
+    left: 80px;
+    width: 80%;
 }
 
-.lecturePageInformations_3  {
-    display: inline-block;
-    width: 33%;
-    top: 0;
+.lecturePageInformations_3 {
+    background-color: var(--couleurBleuFonce);
+    color: #DFE6ED;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.lecturePageInformations_3 td {
+    padding-left: 16px;
 }
