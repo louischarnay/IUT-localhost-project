@@ -14,7 +14,6 @@ body{
     background-color: var(--couleurGrisClair);
     display: flex;
     justify-content: center;
-    text-align: center;
     flex-direction: column;
 }
 
@@ -100,6 +99,31 @@ input{
     margin-top: 50px;
     display: flex;
     flex-direction: row;
+    width: 70%;
+    padding: 30px;
+    border: solid 10px var(--couleurBleuFonce);
+    border-radius: 20px;
+    background-color: var(--couleurBleuFonce);
+    color: var(--couleurGrisClair);
+}
+
+h2, h3{
+    color: var(--couleurBleuFonce);
+    font-weight: bold;
+}
+
+.etoile{
+    --ionicon-stroke-width: 60px;
+    color: var(--couleurBleuFonce);
+    font-size: 1.5rem;
+}
+
+.indexRecommandation .etoile, h2{
+    color: var(--couleurGrisClair);
+}
+
+h2{
+    text-align: left;
 }
 
 .indexMain{
@@ -108,18 +132,15 @@ input{
     flex-direction: column;
 }
 
-h2, h3{
-    color: var(--couleurBleuFonce);
-    font-weight: bold;
-}
-
 .indexAfficheFilmRecommande{
-    margin: 10px 10px 10px 5%;
     border-radius: 10px;
+    margin-right: 20px;
 }
 
-.indexDescriptionFilm{
-    width: 70%;
+.indexH2Etoiles{
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
 }
 
 .lecturePageVideo{
