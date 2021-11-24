@@ -153,6 +153,7 @@ h2{
     display: flex;
     overflow-x: scroll;
     flex-direction: row;
+    width: 100%;
 }
 
 .indexAfficheFilm{
@@ -163,6 +164,18 @@ h2{
 .indexFlecheGauche, .indexFlecheDroite{
     background-color: var(--couleurBleuFonce);
     width: 50px;
+}
+
+.indexFlecheDroite{
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.indexFlecheDroite::after{
+    content: "";
+    background-color: var(--couleurGrisClair);
+    width: 10px;
+    height: 50%;
 }
 
 .indexAfficheFilmRecommande{

@@ -89,7 +89,7 @@
                 <ion-icon name="star" class="etoile"></ion-icon>
                 <ion-icon name="star" class="etoile"></ion-icon>
                 <ion-icon name="star" class="etoile"></ion-icon>
-                <ion-icon name="star" class="etoile"></ion-icon>
+                <ion-icon name="star-outline" class="etoile"></ion-icon>
                 <ion-icon name="star-outline" class="etoile"></ion-icon>
             </div>
         </div>
