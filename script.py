@@ -3,6 +3,7 @@ from collections import defaultdict
 from surprise import SVD
 from surprise import Dataset
 from surprise import Reader
+from surprise.model_selection import GridSearchCV
 
 def get_top_n(predictions, n=10):
     """Return the top-N recommendation for each user from a set of predictions.
@@ -40,17 +41,37 @@ reader = Reader(line_format='user item rating timestamp', sep=',')
 print("loading file")
 data = Dataset.load_from_file(file_path, reader=reader)
 
-trainset = data.build_full_trainset()
-algo = SVD()
-algo.fit(trainset)
+param_grid = {'n_epochs': [10,15], 'lr_all': [0.005,0.007],
+              'reg_all': [0.2,0.4]}
+gs = GridSearchCV(SVD, param_grid, measures=['rmse', 'mae'])
+
+gs.fit(data)
+
+# best RMSE score
+print(gs.best_score['rmse'])
+
+# combination of parameters that gave the best RMSE score
+print(gs.best_params['rmse'])
+
+algo = gs.best_estimator['rmse']
+algo.fit(data.build_full_trainset())
+
+#trainset = data.build_full_trainset()
+#algo = SVD()
+#algo.fit(trainset)
 
 # Than predict ratings for all pairs (u, i) that are NOT in the training set.
 print("training...")
-testset = trainset.build_anti_testset()
+testset = data.build_full_trainset().build_anti_testset()
 predictions = algo.test(testset)
 
 top_n = get_top_n(predictions, n=10)
 
 # Print the recommended items for each user
+file=open("recommendation.csv",'w')
+
 for uid, user_ratings in top_n.items():
+    file.write(uid + str([iid for (iid, _) in user_ratings]) + '\n')
     print(uid, [iid for (iid, _) in user_ratings])
+
+file.close()
