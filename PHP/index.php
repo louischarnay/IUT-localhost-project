@@ -27,12 +27,11 @@
 </header>
 <main class="indexMain">
     <div class="indexRecommandation">
-        <img src="https://picsum.photos/180/240" alt="affiche film recommandé" class="indexAfficheFilmRecommande">
+            <img src="https://picsum.photos/180/240" alt="affiche film recommandé" class="indexAfficheFilmRecommande">
         <div class="indexDescriptionFilm">
             <div class="indexH2Etoiles">
                 <h2>FILM RECOMMANDE</h2>
                 <div class="indexEtoilesH2">
-
                 </div>
             </div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aspernatur at consequatur deserunt dignissimos
@@ -57,27 +56,31 @@
         <div class="indexLigneCategorie">
             <div class="indexFlecheGauche"></div>
             <div class="indexLigneFilms">
-                <img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm">
-                <img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm">
-                <img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm">
-                <img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm">
-                <img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm">
-                <img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm">
-                <img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm">
-                <img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm">
-                <img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm">
-                <img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm">
-                <img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm">
-                <img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm">
-                <img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm">
-                <img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm">
-                <img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm">
-                <img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm">
-                <img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm">
-                <img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm">
-                <img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm">
-                <img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm">
-                <img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm">
+                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
+                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
+                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
+                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
+                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
+                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
+                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
+                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
+                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
+                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
+                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
+                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
+                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
+                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
+                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
+                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
+                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
+                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
+                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
+                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
+                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
+                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
+                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
+                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
+                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
             </div>
             <div class="indexFlecheDroite"></div>
         </div>
@@ -96,27 +99,31 @@
         <div class="indexLigneCategorie">
             <div class="indexFlecheGauche"></div>
             <div class="indexLigneFilms">
-                <img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm">
-                <img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm">
-                <img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm">
-                <img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm">
-                <img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm">
-                <img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm">
-                <img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm">
-                <img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm">
-                <img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm">
-                <img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm">
-                <img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm">
-                <img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm">
-                <img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm">
-                <img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm">
-                <img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm">
-                <img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm">
-                <img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm">
-                <img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm">
-                <img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm">
-                <img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm">
-                <img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm">
+                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
+                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
+                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
+                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
+                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
+                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
+                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
+                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
+                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
+                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
+                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
+                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
+                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
+                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
+                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
+                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
+                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
+                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
+                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
+                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
+                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
+                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
+                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
+                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
+                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
             </div>
             <div class="indexFlecheDroite"></div>
         </div>

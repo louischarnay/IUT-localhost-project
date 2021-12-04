@@ -147,6 +147,9 @@ h2{
     display: flex;
     flex-direction: row;
     width: 100%;
+    background-color: var(--couleurBleuFonce);
+    border-radius: 20px;
+    padding: 10px;
 }
 
 .indexLigneFilms{
@@ -154,28 +157,77 @@ h2{
     overflow-x: scroll;
     flex-direction: row;
     width: 100%;
+    align-items: end;
+    padding-bottom: 10px;
+    background-color: var(--couleurBleuFonce);
+}
+
+.indexLigneFilms::-webkit-scrollbar{
+    background-color: var(--couleurBleuFonce);
+}
+
+.indexLigneFilms::-webkit-scrollbar-thumb{
+    background-color: var(--couleurGrisClair);
+    border-radius: 15px;
+    border: 5px solid var(--couleurBleuFonce);
 }
 
 .indexAfficheFilm{
-    margin: 0 10px;
     border-radius: 5px;
 }
 
 .indexFlecheGauche, .indexFlecheDroite{
+    position: relative;
     background-color: var(--couleurBleuFonce);
     width: 50px;
+    height: 200px;
 }
 
-.indexFlecheDroite{
-    border-bottom-right-radius: 10px;
-    border-top-right-radius: 10px;
+.indexFlecheDroite::before{
+    content: " ";
+    position: absolute;
+    background-color: var(--couleurGrisClair);
+    width: 7px;
+    height: 90px;
+    left: 15px;
+    top: 14px;
+    transform: rotate(-15deg);
+    border-radius: 3px;
 }
 
 .indexFlecheDroite::after{
-    content: "";
+    content: " ";
+    position: absolute;
     background-color: var(--couleurGrisClair);
-    width: 10px;
-    height: 50%;
+    width: 7px;
+    height: 90px;
+    left: 15px;
+    bottom: 13px;
+    transform: rotate(15deg);
+    border-radius: 3px;
+}
+.indexFlecheGauche::before{
+    content: " ";
+    position: absolute;
+    background-color: var(--couleurGrisClair);
+    width: 7px;
+    height: 90px;
+    right: 15px;
+    top: 14px;
+    transform: rotate(15deg);
+    border-radius: 3px;
+}
+
+.indexFlecheGauche::after{
+    content: " ";
+    position: absolute;
+    background-color: var(--couleurGrisClair);
+    width: 7px;
+    height: 90px;
+    right: 15px;
+    bottom: 13px;
+    transform: rotate(-15deg);
+    border-radius: 3px;
 }
 
 .indexAfficheFilmRecommande{
@@ -187,6 +239,12 @@ h2{
     display: flex;
     justify-content: space-between;
     align-content: space-between;
+}
+
+.image{
+    width: 120px;
+    height: 160px;
+    margin: 0 8px;
 }
 
 .lecturePageVideo{
