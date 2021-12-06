@@ -1,22 +1,25 @@
 <?php
   
     class userRecommandation{
-        public $val;
+        public array $recommandation;
         //TODO
-    }
+        public function __construct()
+        {
+          $this->recommandation = array();
+        }
+        public function getRecommandation(int $index){
+          if (($open = fopen("recommendation.csv", "r")) !== FALSE) 
+          {
+              while (($data = fgetcsv($open, 1000, ",")) !== FALSE && $data[0]<=$index) {
+                  if ($data[0]==$index){
+                    print_r($data);
+                    echo '<br>';
+                  }
+              }
 
-
-  if (($open = fopen("recommendation.csv", "r")) !== FALSE) 
-  {
-  
-    while (($data = fgetcsv($open, 1000, ",")) !== FALSE) 
-    {        
-      $array[] = $data; 
+              fclose($open);
+          }
+        }
     }
-  
-    fclose($open);
-  }
-  echo "<pre>";
-  //To display array data
-  echo($array[32][0]);
-  echo "</pre>";
+    $recommandObject =  new userRecommandation();
+    $recommandObject->getRecommandation(5);

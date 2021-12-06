@@ -10,7 +10,7 @@
     <div>
         <?php
             $command = escapeshellcmd('python script.py');
-            $output = shell_exec($command);
+            $output = exec($command);
             echo $output;
         ?>
     </div>
