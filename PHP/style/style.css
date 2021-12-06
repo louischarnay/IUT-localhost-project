@@ -149,7 +149,8 @@ h2{
     width: 100%;
     background-color: var(--couleurBleuFonce);
     border-radius: 20px;
-    padding: 10px;
+    padding: 30px;
+    padding-bottom: 15px;
 }
 
 .indexLigneFilms{
@@ -267,7 +268,7 @@ a {
 .image{
     width: 120px;
     height: 160px;
-    margin: 0 8px;
+    margin: 0 12px;
 }
 
 .lecturePageVideo{

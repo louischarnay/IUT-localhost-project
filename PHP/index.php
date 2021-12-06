@@ -27,7 +27,7 @@
 </header>
 <main class="indexMain">
     <div class="indexRecommandation">
-            <img src="https://picsum.photos/180/240" alt="affiche film recommandé" class="indexAfficheFilmRecommande">
+            <a href="lecture.php"><img src="https://picsum.photos/180/240" alt="affiche film recommandé" class="indexAfficheFilmRecommande"></a>
         <div class="indexDescriptionFilm">
             <div class="indexH2Etoiles">
                 <h2>RECOMMANDE</h2>
@@ -60,35 +60,32 @@
             </div>
         </div>
         <div class="indexLigneCategorie">
-            <div class="indexFlecheGauche"></div>
             <div class="indexLigneFilms">
-                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
-                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
-                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
-                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
-                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
-                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
-                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
-                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
-                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
-                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
-                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
-                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
-                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
-                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
-                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
-                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
-                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
-                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
-                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
-                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
-                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
-                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
-                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
-                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
-                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
+                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
+                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
+                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
+                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
+                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
+                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
+                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
+                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
+                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
+                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
+                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
+                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
+                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
+                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
+                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
+                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
+                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
+                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
+                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
+                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
+                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
+                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
+                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
+                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
             </div>
-            <div class="indexFlecheDroite"></div>
         </div>
     </div>
     <div class="indexCategorie">
@@ -103,35 +100,32 @@
             </div>
         </div>
         <div class="indexLigneCategorie">
-            <div class="indexFlecheGauche"></div>
             <div class="indexLigneFilms">
-                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
-                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
-                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
-                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
-                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
-                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
-                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
-                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
-                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
-                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
-                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
-                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
-                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
-                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
-                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
-                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
-                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
-                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
-                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
-                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
-                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
-                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
-                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
-                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
-                <div class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></div>
+                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
+                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
+                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
+                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
+                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
+                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
+                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
+                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
+                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
+                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
+                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
+                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
+                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
+                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
+                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
+                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
+                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
+                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
+                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
+                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
+                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
+                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
+                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
+                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
             </div>
-            <div class="indexFlecheDroite"></div>
         </div>
     </div>
 </main>
