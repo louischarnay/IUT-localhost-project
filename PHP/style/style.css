@@ -1,0 +1,452 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    --couleurGrisClair: #DFE6ED;
+    --couleurBleuFonce: darkblue;
+    --couleurNoir: #272727;
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: var(--couleurGrisClair);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.indexHeaderDiv{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.indexHeader{
+    padding: 30px;
+    background-color: var(--couleurBleuFonce);
+}
+
+.indexLogo, h1{
+    display: inline-block;
+    font-size: 80px;
+    font-weight: bolder;
+    color: var(--couleurGrisClair);
+}
+
+.indexLogo{
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+ion-icon {
+    --ionicon-stroke-width: 50px;
+}
+
+.indexTitre{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-left: 20px;
+}
+
+.indexDivBoutons{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+.indexBoutonMenu{
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    background-color: var(--couleurGrisClair);
+    border-radius: 10px;
+    font-size: 1.5rem;
+    height: 50px;
+    padding: 5px;
+    text-decoration: none;
+    color: var(--couleurBleuFonce);
+    z-index: 2;
+}
+
+.indexBoutonMenu:nth-child(2){
+    margin: 10px 0;
+}
+
+.indexInput{
+    background-color: white;
+    height: 50px;
+    padding: 10px 0 10px 50px;
+    border-radius: 10px;
+    margin-top: -50px;
+
+}
+
+input{
+    width: 100%;
+    border: none;
+    font-size: 1.5rem;
+}
+
+.indexRecommandation{
+    margin: 50px 0;
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    padding: 30px;
+    border: solid 10px var(--couleurBleuFonce);
+    border-radius: 20px;
+    background-color: var(--couleurBleuFonce);
+    color: var(--couleurGrisClair);
+}
+
+h2, h3{
+    color: var(--couleurBleuFonce);
+    font-weight: bold;
+}
+
+.etoile{
+    --ionicon-stroke-width: 60px;
+    color: var(--couleurBleuFonce);
+    font-size: 1.5rem;
+}
+
+.indexRecommandation .etoile, h2{
+    color: var(--couleurGrisClair);
+}
+
+h2{
+    text-align: left;
+}
+
+.indexMain{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.indexCategorie{
+    width: 90%;
+    margin-bottom: 50px;
+}
+
+.indexH3Etoile{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.indexLigneCategorie{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: var(--couleurBleuFonce);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.indexLigneFilms{
+    display: flex;
+    overflow-x: scroll;
+    flex-direction: row;
+    width: 100%;
+    align-items: end;
+    padding-bottom: 10px;
+    background-color: var(--couleurBleuFonce);
+}
+
+.indexRecommandation img{
+    width: 180px;
+    height: 240px;
+}
+
+.indexDescriptionFilm {
+    overflow: hidden;
+    height: 240px;
+}
+
+.indexTexteRecommande{
+    display: flex;
+    padding-bottom: 30px;
+    height: 100%;
+    align-items: center;
+}
+
+.indexLigneFilms::-webkit-scrollbar{
+    background-color: var(--couleurBleuFonce);
+}
+
+.indexLigneFilms::-webkit-scrollbar-thumb{
+    background-color: var(--couleurGrisClair);
+    border-radius: 15px;
+    border: 5px solid var(--couleurBleuFonce);
+}
+
+.indexAfficheFilm{
+    border-radius: 5px;
+}
+
+.indexFlecheGauche, .indexFlecheDroite{
+    position: relative;
+    background-color: var(--couleurBleuFonce);
+    width: 50px;
+    height: 200px;
+}
+
+.indexFlecheDroite::before{
+    content: " ";
+    position: absolute;
+    background-color: var(--couleurGrisClair);
+    width: 7px;
+    height: 90px;
+    left: 20px;
+    top: 14px;
+    transform: rotate(-15deg);
+    border-radius: 3px;
+}
+
+.indexFlecheDroite::after{
+    content: " ";
+    position: absolute;
+    background-color: var(--couleurGrisClair);
+    width: 7px;
+    height: 90px;
+    left: 20px;
+    bottom: 13px;
+    transform: rotate(15deg);
+    border-radius: 3px;
+}
+
+.indexFlecheGauche::before{
+    content: " ";
+    position: absolute;
+    background-color: var(--couleurGrisClair);
+    width: 7px;
+    height: 90px;
+    right: 20px;
+    top: 14px;
+    transform: rotate(15deg);
+    border-radius: 3px;
+}
+
+.indexFlecheGauche::after{
+    content: " ";
+    position: absolute;
+    background-color: var(--couleurGrisClair);
+    width: 7px;
+    height: 90px;
+    right: 20px;
+    bottom: 13px;
+    transform: rotate(-15deg);
+    border-radius: 3px;
+}
+
+a {
+    text-decoration: none;
+    color: #DFE6ED;
+}
+
+.indexAfficheFilmRecommande{
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.indexH2Etoiles{
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.image{
+    width: 120px;
+    height: 160px;
+    margin: 0 8px;
+}
+
+.lecturePageVideo{
+    position: relative;
+    width: 60%;
+}
+
+.lecturePageInformations_1 h2{
+    color: var(--couleurBleuFonce);
+}
+
+.lecturePageImg{
+    position: relative;
+    text-align: left;
+    width: 60vw;
+    left: 1vw;
+    top: 1vw;
+}
+
+.lectureTools {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.712);
+    width: 12vw;
+    height: 3vw;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    bottom: 0.75vw;
+    left: 44%;
+    z-index: 2;
+}
+
+.lecturePlay {
+    position: relative;
+    top: 4px;
+    color: wheat;
+    font-size: 2.5vw;
+}
+
+.lectureVolume{
+    position: relative;
+    top: 4px;
+    color: wheat;
+    font-size: 2.5vw;
+}
+
+.lectureScan{
+    position: relative;
+    top: 4px;
+    color: wheat;
+    font-size: 2.5vw;
+}
+
+.lecturePageProgressBar{
+    position: relative;
+    display: inline-block;
+    text-align: left;
+    top: 0.4vw;
+    left: 1vw;
+    width: 60vw;
+    height: 10px;
+    background-color: gray;
+}
+
+.lecturePageProgressBar::before{
+    content: "";
+    position: relative;
+    display: inline-block;
+    top: -6px;
+    width: 30%;
+    height: 10px;
+    background-color: red;
+}
+
+.lecturePageInformations{
+    width: 35%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    top: -34vw;
+    left: 63vw;
+    height: 1vw;
+}
+
+.lectureNotation1 {
+    position: relative;
+    top: -27px;
+    left: 125px;
+    width: 50%;
+}
+
+.lectureNotation2 {
+    position: relative;
+    top: -27px;
+    left: 80px;
+    width: 50%;
+}
+
+.lecturePageInformations_3 {
+    background-color: var(--couleurBleuFonce);
+    color: #DFE6ED;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.lecturePageInformations_3 td {
+    padding-left: 16px;
+}
+
+.indexFooter{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px 0;
+    flex-direction: column;
+    height: 100px;
+    background-color: var(--couleurBleuFonce);
+    color: var(--couleurGrisClair);
+}
+
+.reseauxSociaux .md{
+    margin: 0 10px;
+}
+
+@media (max-width: 900px) {
+    .indexLogo {
+        display: none;
+    }
+
+    .lecturePageVideo{
+        position: relative;
+        width: 90%;
+    }
+
+    .lecturePageImg{
+        width: 96vw;
+    }
+
+    .lectureTools{
+        bottom: 3.5vw;
+        width: 17vw;
+        height: 7vw;
+        left: 50%;
+    }
+
+    .lecturePlay {
+        font-size: 4.5vw;
+    }
+    
+    .lectureVolume{
+        font-size: 4.5vw;
+    }
+    
+    .lectureScan{
+        font-size: 4.5vw;
+    }
+
+    .lecturePageProgressBar{
+        width: 96vw;
+        top: 0;
+    }
+
+    .lecturePageInformations{
+        position: relative;
+        width: 90%;
+        top: 0;
+        left: 2vw;
+    }
+
+    .indexH2Etoiles{
+        flex-direction: column;  
+    }
+}
+
+@media (max-width: 750px) {
+    h1{
+        font-size: 50px;
+    }
+}
