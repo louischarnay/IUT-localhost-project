@@ -189,7 +189,7 @@ h2{
     background-color: var(--couleurGrisClair);
     width: 7px;
     height: 90px;
-    left: 15px;
+    left: 20px;
     top: 14px;
     transform: rotate(-15deg);
     border-radius: 3px;
@@ -201,18 +201,19 @@ h2{
     background-color: var(--couleurGrisClair);
     width: 7px;
     height: 90px;
-    left: 15px;
+    left: 20px;
     bottom: 13px;
     transform: rotate(15deg);
     border-radius: 3px;
 }
+
 .indexFlecheGauche::before{
     content: " ";
     position: absolute;
     background-color: var(--couleurGrisClair);
     width: 7px;
     height: 90px;
-    right: 15px;
+    right: 20px;
     top: 14px;
     transform: rotate(15deg);
     border-radius: 3px;
@@ -224,7 +225,7 @@ h2{
     background-color: var(--couleurGrisClair);
     width: 7px;
     height: 90px;
-    right: 15px;
+    right: 20px;
     bottom: 13px;
     transform: rotate(-15deg);
     border-radius: 3px;
@@ -314,4 +315,16 @@ h2{
 
 .reseauxSociaux .md{
     margin: 0 10px;
+}
+
+@media (max-width: 900px) {
+    .indexLogo {
+        display: none;
+    }
+}
+
+@media (max-width: 750px) {
+    h1{
+        font-size: 50px;
+    }
 }
