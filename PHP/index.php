@@ -30,16 +30,22 @@
             <img src="https://picsum.photos/180/240" alt="affiche film recommandé" class="indexAfficheFilmRecommande">
         <div class="indexDescriptionFilm">
             <div class="indexH2Etoiles">
-                <h2>FILM RECOMMANDE</h2>
+                <h2>RECOMMANDE</h2>
                 <div class="indexEtoilesH2">
+                    <ion-icon name="star" class="etoile"></ion-icon>
+                    <ion-icon name="star" class="etoile"></ion-icon>
+                    <ion-icon name="star" class="etoile"></ion-icon>
+                    <ion-icon name="star" class="etoile"></ion-icon>
+                    <ion-icon name="star" class="etoile"></ion-icon>
                 </div>
             </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aspernatur at consequatur deserunt dignissimos
-                    dolore eius in modi molestiae nesciunt non obcaecati officia optio, placeat quas qui quia quo repellat
-                    temporibus unde vitae voluptas voluptatibus voluptatum! Cumque deserunt dicta error fuga fugiat illum modi
-                    mollitia. Aliquid dolorum iure maxime modi sapiente, tenetur vel voluptatibus voluptatum? Ab adipisci
-                    eveniet fugit magnam odio provident quod temporibus. Adipisci aspernatur commodi consectetur consequatur
-                    corporis cumque debitis dicta dignissimos.</p>
+            <div class="indexTexteRecommande">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aspernatur at consequatur deserunt dignissimos
+                        dolore eius in modi molestiae nesciunt non obcaecati officia optio, placeat quas qui quia quo repellat
+                        temporibus unde vitae voluptas voluptatibus voluptatum! Cumque deserunt dicta error fuga fugiat illum modi
+                        mollitia. Aliquid dolorum iure maxime modi sapiente.
+                    </p>
+            </div>
         </div>
     </div>
     <div class="indexCategorie">
