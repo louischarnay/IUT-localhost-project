@@ -12,10 +12,10 @@
     <header class="indexHeader">
         <div class="indexHeaderDiv">
             <div class="indexLogo">
-                <a href="index.php"><ion-icon name="diamond-outline"></ion-icon></a>
+                <ion-icon name="diamond-outline"></ion-icon>
             </div>
             <div class="indexTitre">
-                <a href="index.php"><h1>Second Films</h1></a>
+                <h1>LocalHost</h1>
             </div>
             <div class="indexDivBoutons">
                 <a href="#" class="indexBoutonMenu">Profil</a>

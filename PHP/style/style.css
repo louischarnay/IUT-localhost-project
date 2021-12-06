@@ -258,6 +258,10 @@ a {
     width: 60%;
 }
 
+.lecturePageInformations_1 h2{
+    color: var(--couleurBleuFonce);
+}
+
 .lecturePageImg{
     position: relative;
     text-align: left;
@@ -377,6 +381,46 @@ a {
 @media (max-width: 900px) {
     .indexLogo {
         display: none;
+    }
+
+    .lecturePageVideo{
+        position: relative;
+        width: 90%;
+    }
+
+    .lecturePageImg{
+        width: 96vw;
+    }
+
+    .lectureTools{
+        bottom: 3.5vw;
+        width: 17vw;
+        height: 7vw;
+        left: 50%;
+    }
+
+    .lecturePlay {
+        font-size: 4.5vw;
+    }
+    
+    .lectureVolume{
+        font-size: 4.5vw;
+    }
+    
+    .lectureScan{
+        font-size: 4.5vw;
+    }
+
+    .lecturePageProgressBar{
+        width: 96vw;
+        top: 0;
+    }
+
+    .lecturePageInformations{
+        position: relative;
+        width: 90%;
+        top: 0;
+        left: 2vw;
     }
 }
 
