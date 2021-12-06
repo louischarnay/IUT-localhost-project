@@ -14,7 +14,6 @@ body{
     background-color: var(--couleurGrisClair);
     display: flex;
     justify-content: center;
-    text-align: center;
     flex-direction: column;
 }
 
@@ -97,9 +96,34 @@ input{
 }
 
 .indexRecommandation{
-    margin-top: 50px;
+    margin: 50px 0;
     display: flex;
     flex-direction: row;
+    width: 70%;
+    padding: 30px;
+    border: solid 10px var(--couleurBleuFonce);
+    border-radius: 20px;
+    background-color: var(--couleurBleuFonce);
+    color: var(--couleurGrisClair);
+}
+
+h2, h3{
+    color: var(--couleurBleuFonce);
+    font-weight: bold;
+}
+
+.etoile{
+    --ionicon-stroke-width: 60px;
+    color: var(--couleurBleuFonce);
+    font-size: 1.5rem;
+}
+
+.indexRecommandation .etoile, h2{
+    color: var(--couleurGrisClair);
+}
+
+h2{
+    text-align: left;
 }
 
 .indexMain{
@@ -108,9 +132,103 @@ input{
     flex-direction: column;
 }
 
-h2, h3{
-    color: var(--couleurBleuFonce);
-    font-weight: bold;
+.indexCategorie{
+    width: 90%;
+    margin-bottom: 50px;
+}
+
+.indexH3Etoile{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.indexLigneCategorie{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: var(--couleurBleuFonce);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.indexLigneFilms{
+    display: flex;
+    overflow-x: scroll;
+    flex-direction: row;
+    width: 100%;
+    align-items: end;
+    padding-bottom: 10px;
+    background-color: var(--couleurBleuFonce);
+}
+
+.indexLigneFilms::-webkit-scrollbar{
+    background-color: var(--couleurBleuFonce);
+}
+
+.indexLigneFilms::-webkit-scrollbar-thumb{
+    background-color: var(--couleurGrisClair);
+    border-radius: 15px;
+    border: 5px solid var(--couleurBleuFonce);
+}
+
+.indexAfficheFilm{
+    border-radius: 5px;
+}
+
+.indexFlecheGauche, .indexFlecheDroite{
+    position: relative;
+    background-color: var(--couleurBleuFonce);
+    width: 50px;
+    height: 200px;
+}
+
+.indexFlecheDroite::before{
+    content: " ";
+    position: absolute;
+    background-color: var(--couleurGrisClair);
+    width: 7px;
+    height: 90px;
+    left: 20px;
+    top: 14px;
+    transform: rotate(-15deg);
+    border-radius: 3px;
+}
+
+.indexFlecheDroite::after{
+    content: " ";
+    position: absolute;
+    background-color: var(--couleurGrisClair);
+    width: 7px;
+    height: 90px;
+    left: 20px;
+    bottom: 13px;
+    transform: rotate(15deg);
+    border-radius: 3px;
+}
+
+.indexFlecheGauche::before{
+    content: " ";
+    position: absolute;
+    background-color: var(--couleurGrisClair);
+    width: 7px;
+    height: 90px;
+    right: 20px;
+    top: 14px;
+    transform: rotate(15deg);
+    border-radius: 3px;
+}
+
+.indexFlecheGauche::after{
+    content: " ";
+    position: absolute;
+    background-color: var(--couleurGrisClair);
+    width: 7px;
+    height: 90px;
+    right: 20px;
+    bottom: 13px;
+    transform: rotate(-15deg);
+    border-radius: 3px;
 }
 
 a {
@@ -119,12 +237,20 @@ a {
 }
 
 .indexAfficheFilmRecommande{
-    margin: 10px 10px 10px 5%;
     border-radius: 10px;
+    margin-right: 20px;
 }
 
-.indexDescriptionFilm{
-    width: 70%;
+.indexH2Etoiles{
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.image{
+    width: 120px;
+    height: 160px;
+    margin: 0 8px;
 }
 
 .lecturePageVideo{
@@ -229,6 +355,34 @@ a {
     padding: 20px;
 }
 
+
 .lecturePageInformations_3 td {
     padding-left: 16px;
+}
+
+.indexFooter{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px 0;
+    flex-direction: column;
+    height: 100px;
+    background-color: var(--couleurBleuFonce);
+    color: var(--couleurGrisClair);
+}
+
+.reseauxSociaux .md{
+    margin: 0 10px;
+}
+
+@media (max-width: 900px) {
+    .indexLogo {
+        display: none;
+    }
+}
+
+@media (max-width: 750px) {
+    h1{
+        font-size: 50px;
+    }
 }
