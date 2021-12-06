@@ -276,7 +276,7 @@ a {
     height: 3vw;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
-    top: -2.4vw;
+    bottom: 0.75vw;
     left: 44%;
     z-index: 2;
 }
@@ -336,14 +336,14 @@ a {
 
 .lectureNotation1 {
     position: relative;
-    top: -22px;
+    top: -27px;
     left: 125px;
     width: 50%;
 }
 
 .lectureNotation2 {
     position: relative;
-    top: -22px;
+    top: -27px;
     left: 80px;
     width: 50%;
 }
@@ -354,7 +354,6 @@ a {
     border-radius: 20px;
     padding: 20px;
 }
-
 
 .lecturePageInformations_3 td {
     padding-left: 16px;
