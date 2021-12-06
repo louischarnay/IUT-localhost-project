@@ -440,10 +440,6 @@ h2{
     margin-left: 250px;
 }
 
-.connexionMain button:hover{
-    margin-left: 0;
-}
-
 @media (max-width: 900px) {
     .indexLogo {
         display: none;

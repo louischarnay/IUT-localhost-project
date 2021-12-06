@@ -13,13 +13,13 @@
 <main>
     <div class="connexionMain">
         <h2>Inscription</h2>
-        <form action="inscriptionTraitement.php">
+        <form action="inscriptionTraitement.php" method="post" enctype="multipart/form-data">
             <label for="username">Email</label>
-            <input type="text" id="username">
+            <input type="email" id="username" name="username" required="required">
             <label for="password">Mot de passe</label>
-            <input type="text" id="password">
-            <label for="password">Confirmer le mot de passe</label>
-            <input type="text" id="passwordConfirm">
+            <input type="password" id="password" name="password" required="required">
+            <label for="passwordConfirm">Confirmer le mot de passe</label>
+            <input type="password" id="passwordConfirm" name="passwordConfirm" required="required">
             <button type="submit">Inscription</button>
         </form>
     </div>
