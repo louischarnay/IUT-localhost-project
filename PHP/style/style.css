@@ -118,7 +118,7 @@ h2, h3{
     font-size: 1.5rem;
 }
 
-.indexRecommandation .etoile, h2{
+.indexRecommandation .etoile, .indexH2Etoiles h2, .connexionMain h2{
     color: var(--couleurGrisClair);
 }
 
@@ -276,7 +276,7 @@ a {
     width: 60%;
 }
 
-.lecturePageInformations_1 h2{
+h2{
     color: var(--couleurBleuFonce);
 }
 
@@ -298,7 +298,7 @@ a {
     height: 3vw;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
-    bottom: 0.75vw;
+    bottom: 17px;
     left: 44%;
     z-index: 2;
 }
@@ -306,21 +306,21 @@ a {
 .lecturePlay {
     position: relative;
     top: 4px;
-    color: wheat;
+    color: var(--couleurGrisClair);
     font-size: 2.5vw;
 }
 
 .lectureVolume{
     position: relative;
     top: 4px;
-    color: wheat;
+    color: var(--couleurGrisClair);
     font-size: 2.5vw;
 }
 
 .lectureScan{
     position: relative;
     top: 4px;
-    color: wheat;
+    color: var(--couleurGrisClair);
     font-size: 2.5vw;
 }
 
@@ -396,6 +396,54 @@ a {
     margin: 0 10px;
 }
 
+.connexionMain{
+    background-color: var(--couleurBleuFonce);
+    width: 600px;
+    border-radius: 20px;
+    padding: 30px 7vw;
+    margin: auto;
+    border: solid 10px var(--couleurBleuFonce);
+}
+
+.connexionBody{
+    display: flex;
+    height: 100vh;
+    justify-content: space-between;
+}
+
+.connexionMain h2{
+    margin-left: 2vw;
+    padding-bottom: 20px;
+    display: none;
+}
+
+.connexionMain input, .connexionMain label, .connexionMain button{
+    margin: 10px 0;
+    color: var(--couleurBleuFonce);
+    font-size: 18px;
+}
+
+.connexionMain label{
+    color: var(--couleurGrisClair);
+}
+
+.connexionMain input, .connexionMain button{
+    background-color: var(--couleurGrisClair);
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.connexionMain button{
+    border: none;
+    font-weight: bold;
+    margin-left: 250px;
+}
+
+.connexionMain button:hover{
+    margin-left: 0;
+}
+
 @media (max-width: 900px) {
     .indexLogo {
         display: none;
@@ -411,7 +459,7 @@ a {
     }
 
     .lectureTools{
-        bottom: 3.5vw;
+        bottom: 21px;
         width: 17vw;
         height: 7vw;
         left: 50%;

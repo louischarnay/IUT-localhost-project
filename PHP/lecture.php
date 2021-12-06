@@ -2,7 +2,7 @@
 <html lang="fr">
 
 <head>
-    <title>projet Methodo</title>
+    <title>LocalHost | Lecture</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
@@ -10,22 +10,7 @@
 
 <body>
     <header class="indexHeader">
-        <div class="indexHeaderDiv">
-            <div class="indexLogo">
-                <ion-icon name="diamond-outline"></ion-icon>
-            </div>
-            <div class="indexTitre">
-                <h1>LocalHost</h1>
-            </div>
-            <div class="indexDivBoutons">
-                <a href="#" class="indexBoutonMenu">Profil</a>
-                <a href="#" class="indexBoutonMenu">Déconnexion</a>
-                <a href="#" class="indexBoutonMenu">Rechercher</a>
-            </div>
-        </div>
-        <div class="indexInput">
-            <input type="text" placeholder="Rechercher">
-        </div>
+       <?php include "modules/header.php"?>
     </header>
     <main>
         <div class="lecturePageVideo">

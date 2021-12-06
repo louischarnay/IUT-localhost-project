@@ -2,28 +2,13 @@
 <html lang="fr">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content=""width=device-width, initial-scale=1.8">
-    <title>Index</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocalHost | Index</title>
     <link rel="stylesheet" href="/style/style.css">
 </head>
 <body>
 <header class="indexHeader">
-    <div class="indexHeaderDiv">
-        <div class="indexLogo">
-            <ion-icon name="diamond-outline"></ion-icon>
-        </div>
-        <div class="indexTitre">
-            <h1>LocalHost</h1>
-        </div>
-        <div class="indexDivBoutons">
-            <a href="#" class="indexBoutonMenu">Profil</a>
-            <a href="#" class="indexBoutonMenu">Déconnexion</a>
-            <a href="#" class="indexBoutonMenu">Rechercher</a>
-        </div>
-    </div>
-    <div class="indexInput">
-        <input type="text" placeholder="Rechercher">
-    </div>
+    <?php include "modules/header.php"?>
 </header>
 <main class="indexMain">
     <div class="indexRecommandation">
@@ -70,21 +55,6 @@
                 <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
                 <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
                 <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
-                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
-                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
-                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
-                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
-                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
-                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
-                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
-                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
-                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
-                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
-                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
-                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
-                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
-                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
-                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
             </div>
         </div>
     </div>
@@ -110,33 +80,12 @@
                 <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
                 <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
                 <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
-                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
-                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
-                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
-                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
-                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
-                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
-                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
-                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
-                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
-                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
-                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
-                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
-                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
-                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
-                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
             </div>
         </div>
     </div>
 </main>
 <footer class="indexFooter">
-    <div class="reseauxSociaux">
-        <ion-icon name="logo-instagram"></ion-icon>
-        <ion-icon name="logo-youtube"></ion-icon>
-        <ion-icon name="logo-facebook"></ion-icon>
-    </div>
-    <p>Louis Charnay | Guillaume Grandy | Benji Vadurel | Pablo Guinard</p>
-    <p>Copyright © 2021</p>
+   <?php include "modules/footer.php"?>
 </footer>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 </body>
