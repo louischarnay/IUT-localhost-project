@@ -13,11 +13,11 @@
 <main>
     <div class="connexionMain">
         <h2>Connexion</h2>
-        <form action="connexionTraitement.php">
+        <form action="connexionTraitement.php" method="post" enctype="multipart/form-data">
             <label for="username">Nom d'utilisateur</label>
-            <input type="text" id="username">
+            <input type="email" id="username" name="username" required="required">
             <label for="password">Mot de passe</label>
-            <input type="text" id="password">
+            <input type="password" id="password" name="password" required="required">
             <button type="submit">Connexion</button>
         </form>
     </div>

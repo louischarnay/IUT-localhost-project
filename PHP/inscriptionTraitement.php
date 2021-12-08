@@ -3,10 +3,11 @@ session_start();
 include "class/Db.php";
 $db = new Db();
 if($_POST["password"] == $_POST["passwordConfirm"]) {
-    $passwordHash = password_hash($_POST["password"]);
-    $result = $db->createAccount($_POST["username"], $passwordHash);
+    $result = $db->createAccount($_POST["username"], $_POST["password"]);
     if($result == 0){
         $_SESSION["testIncription"] = "good";
+        $result = $db->login($_POST["username"], $_POST["password"]);
+        $_SESSION["connectedId"] = $result;
         header("Location: ../index.php");
     }
     else if($result == 1){
