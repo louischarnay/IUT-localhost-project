@@ -3,7 +3,8 @@ session_start();
 include "class/Db.php";
 $db = new Db();
 if($_POST["password"] == $_POST["passwordConfirm"]) {
-    $result = $db->createAccount($_POST["username"], $_POST["password"]);
+    $passwordHash = password_hash($_POST["password"]);
+    $result = $db->createAccount($_POST["username"], $passwordHash);
     if($result == 0){
         $_SESSION["testIncription"] = "good";
         header("Location: ../index.php");
