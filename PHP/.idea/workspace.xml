@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c72d113d-fad3-4c2d-aeef-27525dda756a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/deconnexion.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/connexion.php" beforeDir="false" afterPath="$PROJECT_DIR$/connexion.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/connexionTraitement.php" beforeDir="false" afterPath="$PROJECT_DIR$/connexionTraitement.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inscription.php" beforeDir="false" afterPath="$PROJECT_DIR$/inscription.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lecture.php" beforeDir="false" afterPath="$PROJECT_DIR$/lecture.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profil.php" beforeDir="false" afterPath="$PROJECT_DIR$/profil.php" afterDir="false" />
-    </list>
+    <list default="true" id="c72d113d-fad3-4c2d-aeef-27525dda756a" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -76,7 +66,7 @@
       <workItem from="1638801987749" duration="7040000" />
       <workItem from="1638811249869" duration="4633000" />
       <workItem from="1638958315547" duration="3391000" />
-      <workItem from="1638967569091" duration="6516000" />
+      <workItem from="1638967569091" duration="7111000" />
     </task>
     <servers />
   </component>
