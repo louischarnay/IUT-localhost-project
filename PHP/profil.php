@@ -13,17 +13,27 @@ include "class/Db.php";?>
 <header class="indexHeader">
     <?php include "modules/header.php"?>
 </header>
-<main>
-    <div class="profilMain">
-        <?/*php $db = new Db();
+<main class="profilMain">
+    <div class="profilAjouter profilUsers">
+        <?php  $db = new Db();
         $users = $db->getUsersFromAccountId($_SESSION["connectedId"]);
-        var_dump($users);*/?>
+        foreach ($users as $value){?>
+            <div class="profilUser">
+                <p><?php echo $value["username"]?></p>
+                <form action="supprUserTreatment.php" method="post" enctype="multipart/form-data">
+                    <input type="hidden" name="username" value="<?php echo $value["username"]?>">
+                    <button type="submit">Supprimer</button>
+                </form>
+            </div>
+        <?php } unset($value)?>
     </div>
     <div class="profilAjouter">
         <form action="addUserTreatment.php" method="post" enctype="multipart/form-data">
             <label for="newUser">Ajouter un membre</label>
-            <input type="test" name="newUser" id="newUser" required="required">
-            <button type="submit">Ajouter</button>
+            <div class="divAjoutUser">
+                <input type="test" name="newUser" id="newUser" required="required">
+                <button type="submit">Ajouter</button>
+            </div>
         </form>
     </div>
 </main>

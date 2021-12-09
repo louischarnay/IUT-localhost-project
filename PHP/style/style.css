@@ -7,7 +7,7 @@
 }
 
 body{
-    --couleurGrisClair: #A5AAB0;
+    --couleurGrisClair: #d800ff;
     --couleurBleuFonce: darkblue;
     --couleurNoir: #272727;
     font-family: 'Nunito Sans', sans-serif;
@@ -98,8 +98,11 @@ input{
 }
 
 .indexInput input{
-    outline: none;
     font-weight: normal;
+}
+
+input{
+    outline: none;
 }
 
 .indexRecommandation{
@@ -115,13 +118,13 @@ input{
 }
 
 h2, h3{
-    color: var(--couleurBleuFonce);
+    color: var(--couleurGrisClair);
     font-weight: bold;
 }
 
 .etoile{
     --ionicon-stroke-width: 60px;
-    color: var(--couleurBleuFonce);
+    color: var(--couleurGrisClair);
     font-size: 1.5rem;
 }
 
@@ -281,10 +284,6 @@ a {
 .lecturePageVideo{
     position: relative;
     width: 60%;
-}
-
-h2{
-    color: var(--couleurBleuFonce);
 }
 
 .lecturePageImg{
@@ -452,15 +451,23 @@ button{
     cursor: pointer;
 }
 
-.profilAjouter{
-    width: 400px;
+.profilMain{
+    display: flex;
+    padding: 0 3rem;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.profilAjouter, .profilUsers{
+    margin: 30px 0;
+    width: 40%;
     padding: 30px 3vw;
     position: relative;
 }
 
 .profilAjouter button, .profilAjouter input{
     font-size: 1rem;
-    margin: 10px 0;
+    margin: 0;
     padding: 10px;
     border-radius: 10px;
 }
@@ -471,7 +478,29 @@ button{
     right: 30px;
 }
 
+.profilUsers{
+    width: 40%;
+    background-color: var(--couleurBleuFonce);
 
+}
+
+.profilUser, .divAjoutUser{
+    background-color: white;
+    color: var(--couleurGrisClair);
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    padding-left: 15px;
+    font-weight: bold;
+}
+
+.profilUsers form button, .divAjoutUser button{
+    position: relative;
+    margin: 0;
+    right: 0;
+}
 
 @media (max-width: 900px) {
     .indexLogo {

@@ -39,18 +39,23 @@ function __construct(){
  public function getUsersFromAccountId(string $accountId){
     $sth = $this->pdo->prepare("SELECT * FROM Users WHERE accountId= :accountId");
     $sth->execute(["accountId" => $accountId]);
-    $result = $sth->fetch();
+    $result = $sth->fetchAll();
     return $result;
  }
 
  public function addUser(string $accountId, string $username){
-    $sth = $this->pdo->prepare("SELECT * FROM Users WHERE accountId= :accountId");
-    $sth->execute(["accountId" => $accountId]);
-    if($sth->fetch()){
+    $sth = $this->pdo->prepare("SELECT * FROM Users WHERE accountId= :accountId AND username= :username");
+    $sth->execute(["accountId" => $accountId, "username" => $username]);
+    if($sth->fetch() != null){
         return 1;
     }
     $sth = $this->pdo->prepare("INSERT INTO Users(username, accountId) VALUES(:username, :accountId)");
     $sth->execute(["username" => $username, "accountId" => $accountId]);
     return 0;
+ }
+
+ public function deleteUser(string $accountId, string $username){
+    $sth = $this->pdo->prepare("DELETE FROM Users WHERE accountId= :accountId AND username= :username");
+    $sth->execute(["accountId" => $accountId, "username" => $username]);
  }
 }
