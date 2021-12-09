@@ -15,7 +15,7 @@ session_start();?>
 <main>
     <div class="connexionMain">
         <h2>Connexion</h2>
-        <form action="connexionTraitement.php" method="post" enctype="multipart/form-data">
+        <form action="connexionTreatment.php" method="post" enctype="multipart/form-data">
             <label for="username">Nom d'utilisateur</label>
             <input type="email" id="username" name="username" required="required">
             <label for="password">Mot de passe</label>

@@ -35,4 +35,22 @@ function __construct(){
     }
     return false;
  }
+
+ public function getUsersFromAccountId(string $accountId){
+    $sth = $this->pdo->prepare("SELECT * FROM Users WHERE accountId= :accountId");
+    $sth->execute(["accountId" => $accountId]);
+    $result = $sth->fetch();
+    return $result;
+ }
+
+ public function addUser(string $accountId, string $username){
+    $sth = $this->pdo->prepare("SELECT * FROM Users WHERE accountId= :accountId");
+    $sth->execute(["accountId" => $accountId]);
+    if($sth->fetch()){
+        return 1;
+    }
+    $sth = $this->pdo->prepare("INSERT INTO Users(username, accountId) VALUES(:username, :accountId)");
+    $sth->execute(["username" => $username, "accountId" => $accountId]);
+    return 0;
+ }
 }

@@ -15,7 +15,7 @@ session_start();?>
 <main>
     <div class="connexionMain">
         <h2>Inscription</h2>
-        <form action="inscriptionTraitement.php" method="post" enctype="multipart/form-data">
+        <form action="inscriptionTreatment.php" method="post" enctype="multipart/form-data">
             <label for="username">Email</label>
             <input type="email" id="username" name="username" required="required">
             <label for="password">Mot de passe</label>

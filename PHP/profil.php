@@ -1,5 +1,6 @@
 <?php
-session_start();?>
+session_start();
+include "class/Db.php";?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -13,8 +14,17 @@ session_start();?>
     <?php include "modules/header.php"?>
 </header>
 <main>
-    <div class="connexionMain">
-
+    <div class="profilMain">
+        <?/*php $db = new Db();
+        $users = $db->getUsersFromAccountId($_SESSION["connectedId"]);
+        var_dump($users);*/?>
+    </div>
+    <div class="profilAjouter">
+        <form action="addUserTreatment.php" method="post" enctype="multipart/form-data">
+            <label for="newUser">Ajouter un membre</label>
+            <input type="test" name="newUser" id="newUser" required="required">
+            <button type="submit">Ajouter</button>
+        </form>
     </div>
 </main>
 <footer class="indexFooter">

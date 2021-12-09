@@ -7,11 +7,10 @@
 }
 
 body{
-    --couleurGrisClair: #DFE6ED;
+    --couleurGrisClair: #A5AAB0;
     --couleurBleuFonce: darkblue;
     --couleurNoir: #272727;
     font-family: 'Nunito Sans', sans-serif;
-    background-color: var(--couleurGrisClair);
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -47,6 +46,7 @@ body{
 
 ion-icon {
     --ionicon-stroke-width: 50px;
+    color: white;
 }
 
 .indexTitre{
@@ -71,6 +71,7 @@ ion-icon {
     font-size: 1.5rem;
     height: 50px;
     padding: 5px;
+    font-weight: bold;
     text-decoration: none;
     color: var(--couleurBleuFonce);
     z-index: 2;
@@ -86,13 +87,19 @@ ion-icon {
     padding: 10px 0 10px 50px;
     border-radius: 10px;
     margin-top: -50px;
-
+    display: flex;
+    align-items: center;
 }
 
 input{
     width: 100%;
     border: none;
     font-size: 1.5rem;
+}
+
+.indexInput input{
+    outline: none;
+    font-weight: normal;
 }
 
 .indexRecommandation{
@@ -104,7 +111,7 @@ input{
     border: solid 10px var(--couleurBleuFonce);
     border-radius: 20px;
     background-color: var(--couleurBleuFonce);
-    color: var(--couleurGrisClair);
+    color: white;
 }
 
 h2, h3{
@@ -396,49 +403,75 @@ h2{
     margin: 0 10px;
 }
 
-.connexionMain{
+.connexionMain, .profilAjouter{
     background-color: var(--couleurBleuFonce);
     width: 600px;
     border-radius: 20px;
-    padding: 30px 7vw;
+    padding: 20px 7vw;
     margin: auto;
     border: solid 10px var(--couleurBleuFonce);
 }
 
+.hidden{
+    visibility: hidden;
+}
+
 .connexionBody{
     display: flex;
-    height: 100vh;
+    min-height: 100vh;
     justify-content: space-between;
 }
 
-.connexionMain h2{
+.connexionMain h2, .profilAjouter h2{
     margin-left: 2vw;
     padding-bottom: 20px;
     display: none;
 }
 
-.connexionMain input, .connexionMain label, .connexionMain button{
+input, .connexionMain label, .profilAjouter label, .connexionMain button{
     margin: 10px 0;
+    font-weight: bold;
     color: var(--couleurBleuFonce);
-    font-size: 18px;
 }
 
-.connexionMain label{
+.connexionMain label, .profilAjouter label{
     color: var(--couleurGrisClair);
 }
 
 .connexionMain input, .connexionMain button{
-    background-color: var(--couleurGrisClair);
-    font-size: 16px;
-    padding: 5px;
-    border-radius: 5px;
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 10px;
 }
 
-.connexionMain button{
-    border: none;
+button{
+    background-color: var(--couleurGrisClair);
+    border: 10px;
     font-weight: bold;
     margin-left: 250px;
+    cursor: pointer;
 }
+
+.profilAjouter{
+    width: 400px;
+    padding: 30px 3vw;
+    position: relative;
+}
+
+.profilAjouter button, .profilAjouter input{
+    font-size: 1rem;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.profilAjouter button{
+    position: absolute;
+    width: 120px;
+    right: 30px;
+}
+
+
 
 @media (max-width: 900px) {
     .indexLogo {

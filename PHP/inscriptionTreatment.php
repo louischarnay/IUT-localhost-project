@@ -8,6 +8,8 @@ if($_POST["password"] == $_POST["passwordConfirm"]) {
         $_SESSION["testIncription"] = "good";
         $result = $db->login($_POST["username"], $_POST["password"]);
         $_SESSION["connectedId"] = $result;
+        $db->addUser($_POST["username"], $result);
+        $_SESSION["connectedUser"] = $_POST["username"];
         header("Location: ../index.php");
     }
     else if($result == 1){
