@@ -17,9 +17,11 @@
                 <a href="/inscription.php" class="indexBoutonMenu">Inscription</a>
             <a href="/connexion.php" class="indexBoutonMenu">Connexion</a>
             <?php endif?>
-            <a href="/inscription.php" class="indexBoutonMenu">Rechercher</a>
         </div>
     </div>
     <div class="indexInput">
-        <input type="text" placeholder="Rechercher">
+        <form class="formRecherche" action="../index.php" method="post" enctype="multipart/form-data">
+            <input type="text" placeholder="Rechercher">
+            <button type="submit">Rechercher</button>
+        </form>
     </div>
