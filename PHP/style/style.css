@@ -493,11 +493,23 @@ button{
     padding-bottom: 30px;
 }
 
+.profilUser p{
+    width: 100%;
+}
+
 .lectureNotation2 form{
     display: flex;
 }
 
 @media (max-width: 900px) {
+    .profilMain{
+        flex-direction: column;
+    }
+
+    .profilAjouter{
+        width: 90%;
+    }
+
     .indexLogo {
         display: none;
     }
