@@ -19,5 +19,5 @@ if($_POST["password"] == $_POST["passwordConfirm"]) {
 }
 else{
     $_SESSION["testIncription"] = "badPassword";
-    header("Location: ../inscription/php");
+    header("Location: ../inscription.php");
 }

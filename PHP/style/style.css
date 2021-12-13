@@ -49,6 +49,10 @@ ion-icon {
     color: var(--couleurGrisClair);
 }
 
+.inputRadio{
+    display: none;
+}
+
 .indexTitre{
     display: flex;
     align-items: center;
@@ -325,13 +329,6 @@ a {
     width: 50%;
 }
 
-.lectureNotation2 {
-    position: relative;
-    top: -27px;
-    left: 80px;
-    width: 50%;
-}
-
 .lecturePageInformations_3 {
     background-color: var(--couleurBleuFonce);
     color: #DFE6ED;
@@ -456,6 +453,25 @@ button{
     position: relative;
     margin: 0;
     right: 0;
+}
+
+#buttonSendRate{
+    color: var(--couleurBleuFonce);
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: -5px 0 0 10px;
+}
+
+.divMaNote{
+    display: flex;
+    text-align: left;
+    column-gap: 10px;
+    padding-bottom: 30px;
+}
+
+.lectureNotation2 form{
+    display: flex;
 }
 
 @media (max-width: 900px) {
