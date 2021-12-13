@@ -264,13 +264,37 @@ a {
     height: 3vw;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
-    bottom: 17px;
+    bottom: 14px;
     left: 44%;
     z-index: 2;
 }
 
-.lecturePlay {
+.lecturePlayVisible {
     position: relative;
+    top: 4px;
+    color: var(--couleurGrisClair);
+    font-size: 2.5vw;
+}
+
+.lecturePlayHidden {
+    position: relative;
+    display: none;
+    top: 4px;
+    color: var(--couleurGrisClair);
+    font-size: 2.5vw;
+}
+
+.lecturePauseVisible {
+    position: relative;
+    display: block;
+    top: 4px;
+    color: var(--couleurGrisClair);
+    font-size: 2.5vw;
+}
+
+.lecturePauseHidden {
+    position: relative;
+    display: none;
     top: 4px;
     color: var(--couleurGrisClair);
     font-size: 2.5vw;
@@ -434,7 +458,6 @@ button{
 .profilUsers{
     width: 40%;
     background-color: var(--couleurBleuFonce);
-
 }
 
 .profilUser, .divAjoutUser{
