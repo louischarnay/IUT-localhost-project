@@ -44,15 +44,15 @@ session_start();?>
                     <h3>Ma note</h3>
                     <div class="lectureNotation2">
                         <form action="lectureTreatment.php" method="post" enctype="multipart/form-data">
-                            <input id="inputRadio1" class="inputRadio" type="radio" name="rate" value="1">
+                            <input id="inputRadio1" class="inputRadio" type="radio" name="rate" value=1>
                             <label for="inputRadio1"><ion-icon name="star" class="etoile"></ion-icon></label>
-                            <input id="inputRadio2" class="inputRadio" type="radio" name="rate" value="2">
+                            <input id="inputRadio2" class="inputRadio" type="radio" name="rate" value=2>
                             <label for="inputRadio2"><ion-icon name="star" class="etoile"></ion-icon></label>
-                            <input id="inputRadio3" class="inputRadio" type="radio" name="rate" value="3">
+                            <input id="inputRadio3" class="inputRadio" type="radio" name="rate" value=3>
                             <label for="inputRadio3"><ion-icon name="star" class="etoile"></ion-icon></label>
-                            <input id="inputRadio4" class="inputRadio" type="radio" name="rate" value="4">
+                            <input id="inputRadio4" class="inputRadio" type="radio" name="rate" value=4>
                             <label for="inputRadio4"><ion-icon name="star" class="etoile"></ion-icon></label>
-                            <input id="inputRadio5" class="inputRadio" type="radio" name="rate" value="5">
+                            <input id="inputRadio5" class="inputRadio" type="radio" name="rate" value=5>
                             <label for="inputRadio5"><ion-icon name="star" class="etoile"></ion-icon></label>
                             <button type="submit" id="buttonSendRate">Envoyer</button>
                         </form>
