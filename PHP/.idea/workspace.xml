@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c72d113d-fad3-4c2d-aeef-27525dda756a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/lectureTreatment.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/class/Db.php" beforeDir="false" afterPath="$PROJECT_DIR$/class/Db.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/inscription" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inscriptionTreatment.php" beforeDir="false" afterPath="$PROJECT_DIR$/inscriptionTreatment.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lecture.php" beforeDir="false" afterPath="$PROJECT_DIR$/lecture.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,7 +78,7 @@
       <workItem from="1638967569091" duration="7111000" />
       <workItem from="1639054542914" duration="8389000" />
       <workItem from="1639066642063" duration="4224000" />
-      <workItem from="1639395767088" duration="2403000" />
+      <workItem from="1639395767088" duration="6623000" />
     </task>
     <servers />
   </component>

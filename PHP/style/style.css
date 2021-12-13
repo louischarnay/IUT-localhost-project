@@ -470,6 +470,10 @@ button{
     padding-bottom: 30px;
 }
 
+.profilUser p{
+    width: 100%;
+}
+
 .lectureNotation2 form{
     display: flex;
 }
