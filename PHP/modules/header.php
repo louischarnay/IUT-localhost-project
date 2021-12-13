@@ -20,8 +20,8 @@
         </div>
     </div>
     <div class="indexInput">
-        <form class="formRecherche" action="../index.php" method="post" enctype="multipart/form-data">
-            <input type="text" placeholder="Rechercher">
+        <form class="formRecherche" action="../index.php" method="get" enctype="multipart/form-data">
+            <input type="text" placeholder="Rechercher" name="searchedMovie">
             <button type="submit">Rechercher</button>
         </form>
     </div>
