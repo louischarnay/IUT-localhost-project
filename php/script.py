@@ -32,6 +32,23 @@ def get_top_n(predictions, n=10):
 
     return top_n
 
+def correct():
+    path = "recommendation.csv"
+    f = codecs.open(path,encoding='utf-8')
+    contents = f.read()
+
+
+    newcontents = contents.replace('[',',')
+    newcontents = newcontents.replace(']','')
+    newcontents = newcontents.replace("'", '')
+
+    print (newcontents)
+
+    f.close()
+
+    file = open(path,"w")
+    file.write(newcontents)
+    file.close()
 
 # First train an SVD algorithm on the movielens dataset.
 
@@ -76,24 +93,5 @@ for uid, user_ratings in top_n.items():
     print(uid, [iid for (iid, _) in user_ratings])
 
 file.close()
-
-#Correct the file
-def correct():
-    path = "recommendation.csv"
-    f = codecs.open(path,encoding='utf-8')
-    contents = f.read()
-
-
-    newcontents = contents.replace('[',',')
-    newcontents = newcontents.replace(']','')
-    newcontents = newcontents.replace("'", '')
-
-    print (newcontents)
-
-    f.close()
-
-    file = open(path,"w")
-    file.write(newcontents)
-    file.close()
 
 correct()
