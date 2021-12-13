@@ -43,7 +43,7 @@ session_start();?>
                 <div class="divMaNote">
                     <h3>Ma note</h3>
                     <div class="lectureNotation2">
-                        <form action="lectureTreatment" method="post" enctype="multipart/form-data">
+                        <form action="lectureTreatment.php" method="post" enctype="multipart/form-data">
                             <input id="inputRadio1" class="inputRadio" type="radio" name="rate" value="1">
                             <label for="inputRadio1"><ion-icon name="star" class="etoile"></ion-icon></label>
                             <input id="inputRadio2" class="inputRadio" type="radio" name="rate" value="2">

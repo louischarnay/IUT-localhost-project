@@ -58,4 +58,9 @@ function __construct(){
     $sth = $this->pdo->prepare("DELETE FROM Users WHERE accountId= :accountId AND username= :username");
     $sth->execute(["accountId" => $accountId, "username" => $username]);
  }
+
+ public function addRate(string $userId, int $rate, string $movieName){
+    $sth = $this->pdo->prepare("INSERT INTO Rates(mark, userId, movieName) VALUES(:mark, :userId, :movieId)");
+    $sth->execute(["mark" => $rate, "userId" => $userId, "movieName" => $movieName]);
+ }
 }
