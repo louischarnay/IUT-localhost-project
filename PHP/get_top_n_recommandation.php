@@ -37,4 +37,3 @@ function get_top_n_recommandation(int $index){
 
 
     $reco = get_top_n_recommandation(5);
-    print_r($reco[1]);

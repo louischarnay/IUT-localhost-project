@@ -1,5 +1,6 @@
 <?php
-session_start();?>
+session_start();
+include "get_top_n_recommandation.php"?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -12,13 +13,15 @@ session_start();?>
 <header class="indexHeader">
     <?php include "modules/header.php"?>
 </header>
-<?php if(!isset($_GET["searchedMovie"])):?>
+<?php if(!isset($_GET["searchedMovie"])):
+    $fullResults = get_top_n_recommandation(21)?>
 <main class="indexMain">
+    <?php var_dump($fullResults)?>
     <div class="indexRecommandation">
             <a href="lecture.php"><img src="https://picsum.photos/180/240" alt="affiche film recommandé" class="indexAfficheFilmRecommande"></a>
         <div class="indexDescriptionFilm">
             <div class="indexH2Etoiles">
-                <h2>RECOMMANDE</h2>
+                <h2><?php echo $fullResults[1][1]?>></h2>
                 <div class="indexEtoilesH2">
                     <ion-icon name="star" class="etoile"></ion-icon>
                     <ion-icon name="star" class="etoile"></ion-icon>
