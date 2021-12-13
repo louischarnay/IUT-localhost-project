@@ -49,6 +49,12 @@ function __construct(){
     if($sth->fetch() != null){
         return 1;
     }
+    $sth = $this->pdo->prepare("SELECT COUNT() FROM Users WHERE accountId= :accountId");
+    $sth->execute(["accountId" => $accountId]);
+    $result = $sth->fetch();
+    if($result ["COUNT()"] == "4"){
+        return 1;
+    }
     $sth = $this->pdo->prepare("INSERT INTO Users(username, accountId) VALUES(:username, :accountId)");
     $sth->execute(["username" => $username, "accountId" => $accountId]);
     return 0;
