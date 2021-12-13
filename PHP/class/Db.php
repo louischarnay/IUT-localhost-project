@@ -12,7 +12,7 @@ function __construct(){
     }
 }
 
- public function createAccount(string $email, string $password){
+ public function createAccount(string $email, string $password): int{
     $sth = $this->pdo->prepare("SELECT * FROM Accounts WHERE email= :email");
     $sth->execute(["email" => $email]);
     $result = $sth->fetch();
@@ -24,6 +24,7 @@ function __construct(){
     if($sth->execute(["email" => $email, "password" => $passwordHash])){
         return 0;
     }
+    return 1;
  }
 
  public function login(string $email, string $password){
@@ -39,11 +40,10 @@ function __construct(){
  public function getUsersFromAccountId(string $accountId){
     $sth = $this->pdo->prepare("SELECT * FROM Users WHERE accountId= :accountId");
     $sth->execute(["accountId" => $accountId]);
-    $result = $sth->fetchAll();
-    return $result;
+    return $sth->fetchAll();
  }
 
- public function addUser(string $accountId, string $username){
+ public function addUser(string $accountId, string $username):int{
     $sth = $this->pdo->prepare("SELECT * FROM Users WHERE accountId= :accountId AND username= :username");
     $sth->execute(["accountId" => $accountId, "username" => $username]);
     if($sth->fetch() != null){

@@ -105,7 +105,12 @@ session_start();?>
         </div>
     </div>
 </main>
-<?php else:?>
+<?php else:
+    $url="https://api.themoviedb.org/3/search/movie?api_key=6f06ceaedfeefdbfdb4fd9007509a970&language=fr&query=".$_GET["searchedMovie"];
+    $result=file_get_contents($url);
+    $vars=json_decode($result);
+    var_dump($vars);
+    ?>
 <main class="indexMain">
     <div class="indexRecommandation">
         <a href="lecture.php"><img src="https://picsum.photos/180/240" alt="affiche film recommandé" class="indexAfficheFilmRecommande"></a>

@@ -479,6 +479,14 @@ button{
 }
 
 @media (max-width: 900px) {
+    .profilMain{
+        flex-direction: column;
+    }
+
+    .profilAjouter{
+        width: 90%;
+    }
+
     .indexLogo {
         display: none;
     }
