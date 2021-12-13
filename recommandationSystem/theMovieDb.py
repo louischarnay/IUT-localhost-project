@@ -16,8 +16,8 @@ def getMovieInfo(movieTitle):
     print(search.results[0]['original_title'])
     print(search.results[0]['vote_average'])
     print(search.results[0]['overview'])
-    print('<a href = "https://image.tmdb.org/t/p/w500'+search.results[0]['poster_path']+'">lien image'+'</a>')
-    print('<a href = "https://image.tmdb.org/t/p/w500'+search.results[0]['backdrop_path']+'">lien image'+'</a>')
+    print('https://image.tmdb.org/t/p/w500'+search.results[0]['poster_path'])
+    print('https://image.tmdb.org/t/p/w500'+search.results[0]['backdrop_path'])
     print(search.results[0]['release_date'])
     print(search.results[0]['genre_ids'])
     return search.results

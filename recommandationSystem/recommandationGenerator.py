@@ -6,7 +6,7 @@ from surprise import Reader
 from surprise.model_selection import GridSearchCV
 import codecs
 
-def get_top_n(predictions, n=10):
+def get_top_n(predictions, n=20):
     """Return the top-N recommendation for each user from a set of predictions.
 
     Args:
@@ -83,7 +83,7 @@ print("training...")
 testset = data.build_full_trainset().build_anti_testset()
 predictions = algo.test(testset)
 
-top_n = get_top_n(predictions, n=10)
+top_n = get_top_n(predictions, n=20)
 
 # Print the recommended items for each user
 file=open("recommendation.csv",'w')

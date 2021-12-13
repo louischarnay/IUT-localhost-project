@@ -7,12 +7,12 @@
     <title>PHP Test</title>
 </head>
 <body>
-    <div>
-        <?php
-            $command = escapeshellcmd('python script.py');
-            $output = exec($command);
-            echo $output;
-        ?>
-    </div>
+<div>
+    <?php
+    $command = escapeshellcmd('python recommandationGenerator.py');
+    $output = exec($command);
+    echo $output;
+    ?>
+</div>
 </body>
 </html>
