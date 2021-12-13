@@ -19,7 +19,8 @@ session_start();?>
             <img class="lecturePageImg" src="https://picsum.photos/1280/720" alt="image">
             <div class="lectureTools">
                 <ion-icon name="volume-high" class="lectureVolume"></ion-icon>
-                <ion-icon name="play" class="lecturePlay"></ion-icon>
+                <ion-icon name="play" id="play-button" class="lecturePlayVisible"></ion-icon>
+                <ion-icon name="pause-outline" id="pause-button" class="lecturePauseHidden"></ion-icon>
                 <ion-icon name="scan" class="lectureScan"></ion-icon>
             </div>
             <span class="lecturePageProgressBar"></span>
@@ -90,5 +91,6 @@ session_start();?>
         </div>
     </main> 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script src="javascript/script.js"></script>
 </body>
 </html>

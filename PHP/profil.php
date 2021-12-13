@@ -15,11 +15,15 @@ include "class/Db.php";?>
 </header>
 <main class="profilMain">
     <div class="profilAjouter profilUsers">
-        <?php  $db = new Db();
+        <?php $db = new Db();
         $users = $db->getUsersFromAccountId($_SESSION["connectedId"]);
         foreach ($users as $value){?>
-            <div class="profilUser">
-                <p><?php echo $value["username"]?></p>
+            <div class="profilUser">  
+            <p class='username'><?php echo $value["username"]?></p>
+                <form action="connectUserTreatment.php" method="post" enctype="multipart/form-data">
+                    <input type="hidden" name="username" value="<?php echo $value["username"]?>">
+                    <button type="submit">Connexion</button>
+                </form>
                 <form action="supprUserTreatment.php" method="post" enctype="multipart/form-data">
                     <input type="hidden" name="username" value="<?php echo $value["username"]?>">
                     <button type="submit">Supprimer</button>
