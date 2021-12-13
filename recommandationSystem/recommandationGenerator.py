@@ -4,8 +4,9 @@ from surprise import SVD
 from surprise import Dataset
 from surprise import Reader
 from surprise.model_selection import GridSearchCV
+import codecs
 
-def get_top_n(predictions, n=10):
+def get_top_n(predictions, n=20):
     """Return the top-N recommendation for each user from a set of predictions.
 
     Args:
@@ -31,6 +32,23 @@ def get_top_n(predictions, n=10):
 
     return top_n
 
+def correct():
+    path = "recommendation.csv"
+    f = codecs.open(path,encoding='utf-8')
+    contents = f.read()
+
+
+    newcontents = contents.replace('[',',')
+    newcontents = newcontents.replace(']','')
+    newcontents = newcontents.replace("'", '')
+
+    print (newcontents)
+
+    f.close()
+
+    file = open(path,"w")
+    file.write(newcontents)
+    file.close()
 
 # First train an SVD algorithm on the movielens dataset.
 
@@ -65,7 +83,7 @@ print("training...")
 testset = data.build_full_trainset().build_anti_testset()
 predictions = algo.test(testset)
 
-top_n = get_top_n(predictions, n=10)
+top_n = get_top_n(predictions, n=20)
 
 # Print the recommended items for each user
 file=open("recommendation.csv",'w')
@@ -75,3 +93,5 @@ for uid, user_ratings in top_n.items():
     print(uid, [iid for (iid, _) in user_ratings])
 
 file.close()
+
+correct()
