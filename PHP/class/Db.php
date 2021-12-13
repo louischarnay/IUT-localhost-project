@@ -66,7 +66,7 @@ function __construct(){
  }
 
  public function addRate(string $userId, int $rate, string $movieName){
-    $sth = $this->pdo->prepare("INSERT INTO Rates(mark, userId, movieName) VALUES(:mark, :userId, :movieId)");
+    $sth = $this->pdo->prepare("INSERT INTO Rates(mark, userId, movieName) VALUES(:mark, :userId, :movieName)");
     $sth->execute(["mark" => $rate, "userId" => $userId, "movieName" => $movieName]);
  }
 }
