@@ -7,6 +7,7 @@ session_start();?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LocalHost | Inscription</title>
     <link rel="stylesheet" href="/style/style.css">
+    <link rel="icon" type="image/png" href="images/icon.png"/>
 </head>
 <body class="connexionBody">
 <header class="indexHeader">
