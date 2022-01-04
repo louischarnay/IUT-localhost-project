@@ -12,13 +12,13 @@
  * movieIndex est comprise entre 0 et 19 et contient un tableau de caractéristique concernant un film
  *
  * caracteristicID est comprise en 0 et 6 chaque index correspond à une donnée
- * caracteristicID = 0 : Titre du film (format : String)
- * caracteristicID = 1 : Note moyenne (format : Float)
- * caracteristicID = 2 : Résumé du film (format : String)
- * caracteristicID = 3 : Lien image affiche du film (PORTRAIT) (format : String)
- * caracteristicID = 4 : Lien image affiche du film (PAYSAGE) (format : String)
- * caracteristicID = 5 : Date de sortie du film
- * caracteristicID = 6 : ID du genre du film (récupéré le nom du genre n'est pas encore implémenté)
+ * caracteristicID = title : Titre du film (format : String)
+ * caracteristicID = averageNote : Note moyenne (format : Float)
+ * caracteristicID = description : Résumé du film (format : String)
+ * caracteristicID = imagePortrait : Lien image affiche du film (PORTRAIT) (format : String)
+ * caracteristicID = imagePaysage : Lien image affiche du film (PAYSAGE) (format : String)
+ * caracteristicID = releaseDate : Date de sortie du film
+ * caracteristicID = genre : ID du genre du film (récupéré le nom du genre n'est pas encore implémenté)
  *
  */
 function get_top_n_recommandation(int $index){
