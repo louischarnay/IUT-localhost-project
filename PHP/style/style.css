@@ -158,7 +158,7 @@ h2{
 }
 
 .indexCategorie{
-    width: 90%;
+    max-width: 90%;
     margin-bottom: 50px;
 }
 
@@ -196,6 +196,7 @@ h2{
 .indexDescriptionFilm {
     overflow: hidden;
     height: 240px;
+    width: 100%;
 }
 
 .indexTexteRecommande{
@@ -217,6 +218,8 @@ h2{
 
 .indexAfficheFilm{
     border-radius: 5px;
+    width: 120px;
+    height: 160px;
 }
 
 a {
