@@ -15,14 +15,24 @@ include "get_top_n_recommandation.php"?>
     <?php include "modules/header.php"?>
 </header>
 <?php if(!isset($_GET["searchedMovie"])):
-    $fullResults = get_top_n_recommandation(21);
-    var_dump($fullResults)?>
+    $fullResults = get_top_n_recommandation(5);
+    var_dump($fullResults[1]);
+    echo $fullResults[1]["imagePortrait"];
+    echo $fullResults[2]["imagePortrait"];
+    echo $fullResults[3]["imagePortrait"];
+    echo $fullResults[4]["imagePortrait"];
+    echo $fullResults[5]["imagePortrait"];
+    echo $fullResults[6]["imagePortrait"];
+    echo $fullResults[7]["imagePortrait"];
+    echo $fullResults[8]["imagePortrait"];
+    echo $fullResults[9]["imagePortrait"];
+    ?>
 <main class="indexMain">
     <div class="indexRecommandation">
-            <a href="lecture.php"><img src="https://picsum.photos/180/240" alt="affiche film recommandé" class="indexAfficheFilmRecommande"></a>
+            <a href="lecture.php"><img src="<?php echo $fullResults[3]["imagePortrait"] ?>" alt="affiche film recommandé" class="indexAfficheFilmRecommande"></a>
         <div class="indexDescriptionFilm">
             <div class="indexH2Etoiles">
-                <h2><?php echo /*$fullResults[1][1]*/'RECOMMANDATION'?></h2>
+                <h2><?php echo $fullResults[1]["title"]?></h2>
                 <div class="indexEtoilesH2">
                     <ion-icon name="star" class="etoile"></ion-icon>
                     <ion-icon name="star" class="etoile"></ion-icon>
@@ -32,11 +42,7 @@ include "get_top_n_recommandation.php"?>
                 </div>
             </div>
             <div class="indexTexteRecommande">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aspernatur at consequatur deserunt dignissimos
-                        dolore eius in modi molestiae nesciunt non obcaecati officia optio, placeat quas qui quia quo repellat
-                        temporibus unde vitae voluptas voluptatibus voluptatum! Cumque deserunt dicta error fuga fugiat illum modi
-                        mollitia. Aliquid dolorum iure maxime modi sapiente.
-                    </p>
+                    <p><?php echo $fullResults[1]["description"]?></p>
             </div>
         </div>
     </div>
@@ -53,24 +59,9 @@ include "get_top_n_recommandation.php"?>
         </div>
         <div class="indexLigneCategorie">
             <div class="indexLigneFilms">
-                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
-                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
-                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
-                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
-                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
-                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
-                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
-                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
-                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
-                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
-                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
-                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
-                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
-                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
-                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
-                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
-                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
-                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
+                <?php for($cpt=2; $cpt < 11; $cpt++): ?>
+                <a href="lecture.php" class="image"><img src="<?php echo $fullResults[$cpt]["imagePortrait"] ?>" alt="affiche film" class="indexAfficheFilm"></a>
+            <?php endfor?>
             </div>
         </div>
     </div>
