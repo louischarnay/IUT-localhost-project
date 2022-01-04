@@ -13,7 +13,11 @@ session_start();?>
 
 <body>
     <header class="indexHeader">
-       <?php include "modules/header.php"?>
+       <?php include "modules/header.php";
+        $url="https://api.themoviedb.org/3/movie/".$_GET["title"]."movie?api_key=6f06ceaedfeefdbfdb4fd9007509a970&language=fr";
+        $result=file_get_contents($url);
+        $result=(array)json_decode($result);
+        ?>
     </header>
     <main>
         <div class="lecturePageVideo">
@@ -29,8 +33,8 @@ session_start();?>
         <div class="lecturePageInformations">
             
             <div class="lecturePageInformations_1">
-                <h2>TITRE FILM</h2>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi obcaecati alias itaque dolorum quibusdam excepturi modi nemo sequi nihil odit nisi consequatur numquam, esse assumenda sit aspernatur nam quis quia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt incidunt eaque hic odio iusto accusamus quia dolorem quo. Recusandae necessitatibus ut a delectus animi quos labore quod temporibus illo minus!</p>
+                <h2><?php echo $result["title"] ?></h2>
+                <p><?php echo $result["overview"] ?></p>
             </div>
             <div class="lecturePageInformations_2">    
                 <br>
@@ -46,15 +50,15 @@ session_start();?>
                     <h3>Ma note</h3>
                     <div class="lectureNotation2">
                         <form action="lectureTreatment.php" method="post" enctype="multipart/form-data">
-                            <input id="inputRadio1" class="inputRadio" type="radio" name="rate" value="1">
+                            <input id="inputRadio1" class="inputRadio" type="radio" name="rate" value=1 required="required">
                             <label for="inputRadio1"><ion-icon name="star" class="etoile"></ion-icon></label>
-                            <input id="inputRadio2" class="inputRadio" type="radio" name="rate" value="2">
+                            <input id="inputRadio2" class="inputRadio" type="radio" name="rate" value=2 required="required">
                             <label for="inputRadio2"><ion-icon name="star" class="etoile"></ion-icon></label>
-                            <input id="inputRadio3" class="inputRadio" type="radio" name="rate" value="3">
+                            <input id="inputRadio3" class="inputRadio" type="radio" name="rate" value=3 required="required">
                             <label for="inputRadio3"><ion-icon name="star" class="etoile"></ion-icon></label>
-                            <input id="inputRadio4" class="inputRadio" type="radio" name="rate" value="4">
+                            <input id="inputRadio4" class="inputRadio" type="radio" name="rate" value=4 required="required">
                             <label for="inputRadio4"><ion-icon name="star" class="etoile"></ion-icon></label>
-                            <input id="inputRadio5" class="inputRadio" type="radio" name="rate" value="5">
+                            <input id="inputRadio5" class="inputRadio" type="radio" name="rate" value=5 required="required">
                             <label for="inputRadio5"><ion-icon name="star" class="etoile"></ion-icon></label>
                             <button type="submit" id="buttonSendRate">Envoyer</button>
                         </form>
@@ -64,28 +68,14 @@ session_start();?>
             <div class="lecturePageInformations_3">
                 <table>
                     <tr>
-                        <td><b>Réalisateur :</b></td>
-                        <td>Mr Réalisateur</td>
-                    </tr>
-                    <tr>
                         <td><b>Genre :</b></td>
-                        <td>Genre</td>
+                        <td><?php
+                            $tmp=(array)$result["genres"][0];
+                            echo $tmp["name"]?></td>
                     </tr>
                     <tr>
                         <td><b>Date de sortie :</b></td>
-                        <td>19 octobre 2021</td>
-                    </tr>
-                    <tr>
-                        <td><b>Acteurs :</b></td>
-                        <td>Acteur 1</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>Acteur 2</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>Acteur 3</td>
+                        <td><?php echo $result["release_date"]?></td>
                     </tr>
                 </table>
             </div>
