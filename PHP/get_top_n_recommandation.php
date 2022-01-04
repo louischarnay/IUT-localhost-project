@@ -1,6 +1,7 @@
 <?php
     include "getRecommandation.php";
     include "getMovieTitle.php";
+    include "getMovieInfo.php";
 
 
 /**
@@ -23,13 +24,15 @@
 function get_top_n_recommandation(int $index){
         $result[] = [];
         $user_recommand = getRecommandation($index);
+        $compteur = 0;
         foreach ($user_recommand as $key=> $movie){
-            if ($key != 0) {
+            if ($compteur != 0 && $compteur != 1) {
                 $tmp_title = returnMovieName($movie);
-                exec('python "theMovieDb.py" ' . $tmp_title, $return_var);
+                $return_var = getMovieInfo($tmp_title);
                 array_push($result,$return_var);
                 $return_var = null;
             }
+            $compteur++;
         }
         return $result;
 
