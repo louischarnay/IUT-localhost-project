@@ -88,5 +88,16 @@
         return $movie;
     }
 
+    function getMoviePictures($movieTitle){
+        $link = "https://api.themoviedb.org/3/search/movie?api_key=".API_KEY."&query=".formalizeTitle($movieTitle);
+        $movieInfo = getDataFromLink($link);
+        //IMAGE PORTRAIT
+        $movie["imagePortrait"] = "https://image.tmdb.org/t/p/w500".getField($movieInfo,"poster_path");
+
+        //IMAGE PAYSAGE
+        $movie["imagePaysage"] = "https://image.tmdb.org/t/p/w500".getField($movieInfo,"backdrop_path");
+        return $movie;
+    }
+
 
 #titre, overview,réalisateur, genre, date de sortie, acteurs, "note", image portrait, image paysage

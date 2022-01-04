@@ -36,7 +36,20 @@ function get_top_n_recommandation(int $index){
         }
         return $result;
 
+}
+
+function get_top_n_picture(int $index){
+    $result[] = [];
+    $user_recommand = getRecommandation($index);
+    $compteur = 0;
+    foreach ($user_recommand as $key=> $movie){
+        if ($compteur != 0 && $compteur != 1) {
+            $tmp_title = returnMovieName($movie);
+            $return_var = getMoviePictures($tmp_title);
+            array_push($result,$return_var);
+            $return_var = null;
+        }
+        $compteur++;
     }
-
-
-    $reco = get_top_n_recommandation(5);
+    return $result;
+}

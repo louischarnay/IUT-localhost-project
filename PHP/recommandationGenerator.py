@@ -1,4 +1,4 @@
-from collections import defaultdict
+    from collections import defaultdict
 
 from surprise import SVD
 from surprise import Dataset

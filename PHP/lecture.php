@@ -1,4 +1,5 @@
 <?php
+include 'getMovieInfo.php';
 session_start();?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -14,14 +15,12 @@ session_start();?>
 <body>
     <header class="indexHeader">
        <?php include "modules/header.php";
-        $url="https://api.themoviedb.org/3/movie/".$_GET["title"]."movie?api_key=6f06ceaedfeefdbfdb4fd9007509a970&language=fr";
-        $result=file_get_contents($url);
-        $result=(array)json_decode($result);
+        $result=getMovieInfo($_GET["title"]);
         ?>
     </header>
     <main>
         <div class="lecturePageVideo">
-            <img class="lecturePageImg" src="https://picsum.photos/1280/720" alt="image">
+            <img class="lecturePageImg" src="<?php echo $result["imagePaysage"] ?>" alt="image">
             <div class="lectureTools">
                 <ion-icon name="volume-high" class="lectureVolume"></ion-icon>
                 <ion-icon name="play" id="play-button" class="lecturePlayVisible"></ion-icon>
@@ -34,7 +33,7 @@ session_start();?>
             
             <div class="lecturePageInformations_1">
                 <h2><?php echo $result["title"] ?></h2>
-                <p><?php echo $result["overview"] ?></p>
+                <p><?php echo $result["description"] ?></p>
             </div>
             <div class="lecturePageInformations_2">    
                 <br>
@@ -70,12 +69,11 @@ session_start();?>
                     <tr>
                         <td><b>Genre :</b></td>
                         <td><?php
-                            $tmp=(array)$result["genres"][0];
-                            echo $tmp["name"]?></td>
+                            $tmp=(array)$result["genre"]; ?></td>
                     </tr>
                     <tr>
                         <td><b>Date de sortie :</b></td>
-                        <td><?php echo $result["release_date"]?></td>
+                        <td><?php echo $result["releaseDate"]?></td>
                     </tr>
                 </table>
             </div>
