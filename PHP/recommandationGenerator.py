@@ -6,7 +6,7 @@ from surprise import Reader
 from surprise.model_selection import GridSearchCV
 import codecs
 
-def get_top_n(predictions, n=20):
+def get_top_n(predictions, n=30):
     """Return the top-N recommendation for each user from a set of predictions.
 
     Args:
