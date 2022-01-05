@@ -26,10 +26,16 @@
 
     function getField($chaine, $fieldName){
 
-        $pos = strpos($chaine, $fieldName);
+        if ($fieldName === "id"){
+            $pos = strpos($chaine, $fieldName);
+            $pos = strpos($chaine, $fieldName,$pos+1);
+        }
+        else{
+            $pos = strpos($chaine, $fieldName);
+        }
         $element = substr($chaine,$pos);
 
-        if ($fieldName=="overview"||$fieldName=="genre_ids"){
+        if ($fieldName=="overview"||$fieldName==="genre_ids"){
             $result = $element;
             $beginPos = strpos($element, ':');
 
@@ -91,5 +97,5 @@
         return $movie;
     }
 
-
+getMovieInfo("Iron Man");
 #titre, overview,réalisateur, genre, date de sortie, acteurs, "note", image portrait, image paysage
