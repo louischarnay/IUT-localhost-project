@@ -2,7 +2,7 @@
 session_start();
 if (!isset($_SESSION["connectedId"])):
     header("Location: /connexion.php");
-else: ?>
+else:
 include "get_top_n_recommandation.php"?>
 <!DOCTYPE html>
 <html lang="fr">
