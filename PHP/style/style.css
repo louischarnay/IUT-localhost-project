@@ -548,7 +548,11 @@ button{
         left: 50%;
     }
 
-    .lecturePlay {
+    .lecturePlayVisible {
+        font-size: 4.5vw;
+    }
+
+    .lecturePauseVisible{
         font-size: 4.5vw;
     }
     

@@ -31,8 +31,10 @@ function __construct(){
     $sth = $this->pdo->prepare("SELECT * FROM Accounts WHERE email= :email");
     $sth->execute(["email" => $email]);
     $result = $sth->fetch();
-    if(password_verify($password, $result["password"])){
-        return $result["idAccount"];
+    if(isset($result["password"])) {
+        if (password_verify($password, $result["password"])) {
+            return $result["idAccount"];
+        }
     }
     return false;
  }
