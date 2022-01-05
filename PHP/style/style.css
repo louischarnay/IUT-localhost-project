@@ -210,7 +210,7 @@ h2{
     background-color: var(--couleurBleuFonce);
 }
 
-.indexLigneFilms::-webkit-scrollbar-thumb{
+.indexLigneFilms::-dd{
     background-color: var(--couleurGrisClair);
     border-radius: 15px;
     border: 5px solid var(--couleurBleuFonce);
@@ -513,9 +513,6 @@ button{
 .inputRadio:checked+label:before, .inputRadio:hover+label:before{
     content: "";
     position: absolute;
-    width: 12px;
-    margin: 8px 6px;
-    height: 10px;
     background-color: var(--couleurGrisClair);
 }
 
