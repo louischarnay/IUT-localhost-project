@@ -2,5 +2,7 @@
 session_start();
 include "class/Db.php";
 $db = new Db();
-$db->addRate($_SESSION["userID"], $_POST["rate"], "Film COOL");
-header("Location: ../lecture.php");
+if(isset($_SESSION["connectedId"])) {
+    $db->addRate($_SESSION["connectedId"], $_POST["rate"], "Film COOL");
+}
+header("Location: ../index.php");

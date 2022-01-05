@@ -25,6 +25,11 @@ session_start();?>
             <input type="password" id="passwordConfirm" name="passwordConfirm" required="required">
             <button type="submit">Inscription</button>
         </form>
+        <?php if(isset($_SESSION["testIncription"]) and $_SESSION["testIncription"]=="badEmail")
+            {
+                echo "<p style=\"color:red\"> Ce compte existe déjà </p>";
+            }
+            ?>
     </div>
 </main>
 <footer class="indexFooter">

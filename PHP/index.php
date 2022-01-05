@@ -89,7 +89,7 @@ include "get_top_n_recommandation.php"?>
         <div class="indexLigneCategorie">
             <div class="indexLigneFilms">
                 <?php for($cpt=2; $cpt < 11; $cpt++):?>
-                <a href="lecture.php?title=<?php echo $fullResults[$cpt]["id"]?>" class="image"><img src="<?php echo $fullResults[$cpt]["imagePortrait"] ?>" alt="affiche film" class="indexAfficheFilm"></a>
+                <a href="lecture.php?title=<?php echo $fullResults[$cpt]['id']?>" class="image"><img src="<?php echo $fullResults[$cpt]["imagePortrait"] ?>" alt="affiche film" class="indexAfficheFilm"></a>
             <?php endfor?>
             </div>
         </div>
@@ -144,7 +144,7 @@ include "get_top_n_recommandation.php"?>
     ?>
 <main class="indexMain">
     <div class="indexRecommandation">
-        <a href="lecture.php?title=<?php echo $result["id"]?>"><img src="https://image.tmdb.org/t/p/w500//<?php echo $result["poster_path"]?>" alt="affiche film recommandé" class="indexAfficheFilmRecommande"></a>
+        <a href="lecture.php?title=<?php echo $result['id']?>"><img src="https://image.tmdb.org/t/p/w500//<?php echo $result["poster_path"]?>" alt="affiche film recommandé" class="indexAfficheFilmRecommande"></a>
         <div class="indexDescriptionFilm"><!--180/240-->
             <div class="indexH2Etoiles">
                 <h2><?php echo $result["title"]?></h2>
