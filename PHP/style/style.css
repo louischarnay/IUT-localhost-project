@@ -238,6 +238,10 @@ a {
     align-content: space-between;
 }
 
+.indexH2Etoiles h2{
+    max-width: 70%;
+}
+
 .image{
     width: 120px;
     height: 160px;
@@ -502,6 +506,17 @@ button{
 
 .lectureNotation2 form{
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputRadio:checked+label:before{
+    content: "";
+    position: absolute;
+    width: 12px;
+    margin: 8px 6px;
+    height: 10px;
+    background-color: var(--couleurGrisClair);
 }
 
 @media (max-width: 900px) {

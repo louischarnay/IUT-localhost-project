@@ -61,7 +61,7 @@
 
 
     function getMovieInfo($movieTitle){
-        $link = "https://api.themoviedb.org/3/search/movie?api_key=".API_KEY."&query=".formalizeTitle($movieTitle);
+        $link = "https://api.themoviedb.org/3/search/movie?api_key=".API_KEY."&language=fr&query=".formalizeTitle($movieTitle);
         $movieInfo = getDataFromLink($link);
         //TITLE
         $movie["title"] = getField($movieInfo,"title");
@@ -70,7 +70,7 @@
         $movie["description"] = getField($movieInfo, "overview");
 
         //DATE DE SORTIE
-        $movie["releaseDate"] = getField($movieInfo,"release_date");
+        //$movie["releaseDate"] = getField($movieInfo,"release_date");
 
         //NOTE MOYENNE
         $movie["averageNote"] = getField($movieInfo,"vote_average");
@@ -79,10 +79,13 @@
         $movie["imagePortrait"] = "https://image.tmdb.org/t/p/w500".getField($movieInfo,"poster_path");
 
         //IMAGE PAYSAGE
-        $movie["imagePaysage"] = "https://image.tmdb.org/t/p/w500".getField($movieInfo,"backdrop_path");
+        //$movie["imagePaysage"] = "https://image.tmdb.org/t/p/w500".getField($movieInfo,"backdrop_path");
 
         //GENRE
-        $movie["genre"] = getField($movieInfo,"genre_ids");
+        //$movie["genre"] = getField($movieInfo,"genre_ids");
+
+        //ID
+        $movie["id"] = getField($movieInfo, "id");
 
 
         return $movie;

@@ -15,30 +15,37 @@ include "get_top_n_recommandation.php"?>
     <?php include "modules/header.php"?>
 </header>
 <?php if(!isset($_GET["searchedMovie"])):
-    $fullResults = get_top_n_recommandation(5);
-    var_dump($fullResults[1]);
-    echo $fullResults[1]["imagePortrait"];
-    echo $fullResults[2]["imagePortrait"];
-    echo $fullResults[3]["imagePortrait"];
-    echo $fullResults[4]["imagePortrait"];
-    echo $fullResults[5]["imagePortrait"];
-    echo $fullResults[6]["imagePortrait"];
-    echo $fullResults[7]["imagePortrait"];
-    echo $fullResults[8]["imagePortrait"];
-    echo $fullResults[9]["imagePortrait"];
-    ?>
+    $fullResults = get_top_n_recommandation(5)?>
 <main class="indexMain">
     <div class="indexRecommandation">
-            <a href="lecture.php"><img src="<?php echo $fullResults[3]["imagePortrait"] ?>" alt="affiche film recommandé" class="indexAfficheFilmRecommande"></a>
+            <a href="lecture.php?title=<?php echo $fullResults["1"]["id"]?>"><img src="<?php echo $fullResults[1]["imagePortrait"] ?>" alt="affiche film recommandé" class="indexAfficheFilmRecommande"></a>
         <div class="indexDescriptionFilm">
             <div class="indexH2Etoiles">
                 <h2><?php echo $fullResults[1]["title"]?></h2>
                 <div class="indexEtoilesH2">
-                    <ion-icon name="star" class="etoile"></ion-icon>
-                    <ion-icon name="star" class="etoile"></ion-icon>
-                    <ion-icon name="star" class="etoile"></ion-icon>
-                    <ion-icon name="star" class="etoile"></ion-icon>
-                    <ion-icon name="star" class="etoile"></ion-icon>
+                    <?php $rate = $fullResults[1]["averageNote"] / 2;
+                    if($rate >=0.5):?>
+                        <ion-icon name="star" class="etoile"></ion-icon>
+                    <?php else:?>
+                        <ion-icon name="star-outline" class="etoile"></ion-icon>
+                    <?php endif;
+                    if($rate >=1.5):?>
+                        <ion-icon name="star" class="etoile"></ion-icon>
+                    <?php else:?>
+                    <ion-icon name="star-outline" class="etoile"></ion-icon> <?php endif;
+                    if($rate >=2.5):?>
+                        <ion-icon name="star" class="etoile"></ion-icon>
+                    <?php else:?>
+                    <ion-icon name="star-outline" class="etoile"></ion-icon> <?php endif;
+                    if($rate >=3.5):?>
+                        <ion-icon name="star" class="etoile"></ion-icon>
+                    <?php else:?>
+                    <ion-icon name="star-outline" class="etoile"></ion-icon> <?php endif;
+                    if($rate >=4.5):?>
+                        <ion-icon name="star" class="etoile"></ion-icon>
+                    <?php else:?>
+                    <ion-icon name="star-outline" class="etoile"></ion-icon>
+                    <?php endif?>
                 </div>
             </div>
             <div class="indexTexteRecommande">
@@ -48,54 +55,83 @@ include "get_top_n_recommandation.php"?>
     </div>
     <div class="indexCategorie">
         <div class="indexH3Etoile">
-            <h3>CATEGORIE 1</h3>
+            <h3>VOS FILMS RECOMMANDES</h3>
             <div class="indexEtoiles">
-                <ion-icon name="star" class="etoile"></ion-icon>
-                <ion-icon name="star" class="etoile"></ion-icon>
-                <ion-icon name="star" class="etoile"></ion-icon>
-                <ion-icon name="star" class="etoile"></ion-icon>
-                <ion-icon name="star-outline" class="etoile"></ion-icon>
+                <?php $rate = 0;
+                for($cpt=2; $cpt < 11; $cpt++) {
+                    $rate += $fullResults[$cpt]["averageNote"];
+                }
+                $rate = $rate / 18;
+                if($rate >=0.5):?>
+                    <ion-icon name="star" class="etoile"></ion-icon>
+                <?php else:?>
+                    <ion-icon name="star-outline" class="etoile"></ion-icon>
+                <?php endif;
+                if($rate >=1.5):?>
+                    <ion-icon name="star" class="etoile"></ion-icon>
+                <?php else:?>
+                    <ion-icon name="star-outline" class="etoile"></ion-icon> <?php endif;
+                if($rate >=2.5):?>
+                    <ion-icon name="star" class="etoile"></ion-icon>
+                <?php else:?>
+                    <ion-icon name="star-outline" class="etoile"></ion-icon> <?php endif;
+                if($rate >=3.5):?>
+                    <ion-icon name="star" class="etoile"></ion-icon>
+                <?php else:?>
+                    <ion-icon name="star-outline" class="etoile"></ion-icon> <?php endif;
+                if($rate >=4.5):?>
+                    <ion-icon name="star" class="etoile"></ion-icon>
+                <?php else:?>
+                    <ion-icon name="star-outline" class="etoile"></ion-icon>
+                <?php endif?>
             </div>
         </div>
         <div class="indexLigneCategorie">
             <div class="indexLigneFilms">
-                <?php for($cpt=2; $cpt < 11; $cpt++): ?>
-                <a href="lecture.php" class="image"><img src="<?php echo $fullResults[$cpt]["imagePortrait"] ?>" alt="affiche film" class="indexAfficheFilm"></a>
+                <?php for($cpt=2; $cpt < 11; $cpt++):?>
+                <a href="lecture.php?title=<?php echo $fullResults[$cpt]["id"]?>" class="image"><img src="<?php echo $fullResults[$cpt]["imagePortrait"] ?>" alt="affiche film" class="indexAfficheFilm"></a>
             <?php endfor?>
             </div>
         </div>
     </div>
     <div class="indexCategorie">
         <div class="indexH3Etoile">
-            <h3>CATEGORIE 2</h3>
+            <h3>ILS PEUVENT AUSSI VOUS PLAIRE</h3>
             <div class="indexEtoiles">
-                <ion-icon name="star" class="etoile"></ion-icon>
-                <ion-icon name="star" class="etoile"></ion-icon>
-                <ion-icon name="star" class="etoile"></ion-icon>
-                <ion-icon name="star-outline" class="etoile"></ion-icon>
-                <ion-icon name="star-outline" class="etoile"></ion-icon>
+                <?php $rate = 0;
+                for($cpt=11; $cpt < 20; $cpt++) {
+                    $rate += $fullResults[$cpt]["averageNote"];
+                }
+                $rate = $rate / 18;
+                if($rate >=0.5):?>
+                    <ion-icon name="star" class="etoile"></ion-icon>
+                <?php else:?>
+                    <ion-icon name="star-outline" class="etoile"></ion-icon>
+                <?php endif;
+                if($rate >=1.5):?>
+                    <ion-icon name="star" class="etoile"></ion-icon>
+                <?php else:?>
+                    <ion-icon name="star-outline" class="etoile"></ion-icon> <?php endif;
+                if($rate >=2.5):?>
+                    <ion-icon name="star" class="etoile"></ion-icon>
+                <?php else:?>
+                    <ion-icon name="star-outline" class="etoile"></ion-icon> <?php endif;
+                if($rate >=3.5):?>
+                    <ion-icon name="star" class="etoile"></ion-icon>
+                <?php else:?>
+                    <ion-icon name="star-outline" class="etoile"></ion-icon> <?php endif;
+                if($rate >=4.5):?>
+                    <ion-icon name="star" class="etoile"></ion-icon>
+                <?php else:?>
+                    <ion-icon name="star-outline" class="etoile"></ion-icon>
+                <?php endif?>
             </div>
         </div>
         <div class="indexLigneCategorie">
             <div class="indexLigneFilms">
-                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
-                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
-                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
-                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
-                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
-                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
-                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
-                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
-                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
-                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
-                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
-                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
-                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
-                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
-                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
-                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
-                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
-                <a href="lecture.php" class="image"><img src="https://picsum.photos/120/160" alt="affiche film" class="indexAfficheFilm"></a>
+                <?php for($cpt=11; $cpt < 20; $cpt++): ?>
+                    <a href="lecture.php?title=<?php echo $fullResults[$cpt]["id"]?>" class="image"><img src="<?php echo $fullResults[$cpt]["imagePortrait"] ?>" alt="affiche film" class="indexAfficheFilm"></a>
+                <?php endfor?>
             </div>
         </div>
     </div>
