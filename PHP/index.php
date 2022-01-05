@@ -143,9 +143,12 @@ include "get_top_n_recommandation.php"?>
     $url="https://api.themoviedb.org/3/search/movie?api_key=6f06ceaedfeefdbfdb4fd9007509a970&language=fr&query=".$_GET["searchedMovie"];
     $result=file_get_contents($url);
     $vars=(array)json_decode($result);
-    $result=(array)$vars["results"][0];
+    if(isset($vars["results"][0])) {
+        $result = (array)$vars["results"][0];
+    }
     ?>
 <main class="indexMain">
+    <?php if(isset($vars["results"][0])):?>
     <div class="indexRecommandation">
         <a href="lecture.php?title=<?php echo $result['id']?>"><img src="https://image.tmdb.org/t/p/w500//<?php echo $result["poster_path"]?>" alt="affiche film recommandé" class="indexAfficheFilmRecommande"></a>
         <div class="indexDescriptionFilm"><!--180/240-->
@@ -165,6 +168,11 @@ include "get_top_n_recommandation.php"?>
             </div>
         </div>
     </div>
+    <?php else:
+        echo "<h2 class=\"font-size:40px\">Aucun résultat :\</h2>";
+    endif;
+    if(isset($vars["results"][1])):
+    ?>
     <div class="indexCategorie">
         <div class="indexH3Etoile">
         </div>
@@ -180,6 +188,7 @@ include "get_top_n_recommandation.php"?>
             </div>
         </div>
     </div>
+    <?php endif;?>
 </main>
 <?php endif;
 endif?>
