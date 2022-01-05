@@ -43,6 +43,12 @@ function __construct(){
     return $sth->fetchAll();
  }
 
+ public function getUser(string $accountId, string $name){
+    $sth = $this->pdo->prepare("SELECT * FROM Users WHERE username= :name AND accountId= :accountId");
+    $sth->execute(["accountId" => $accountId, "name" => $name]);
+    return $sth->fetch();
+ }
+
  public function addUser(string $accountId, string $username):int{
     $sth = $this->pdo->prepare("SELECT * FROM Users WHERE accountId= :accountId AND username= :username");
     $sth->execute(["accountId" => $accountId, "username" => $username]);

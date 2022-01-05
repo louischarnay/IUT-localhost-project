@@ -1,5 +1,8 @@
 <?php
 session_start();
+if (!isset($_SESSION["connectedId"])):
+    header("Location: /connexion.php");
+else: ?>
 include "get_top_n_recommandation.php"?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -15,7 +18,7 @@ include "get_top_n_recommandation.php"?>
     <?php include "modules/header.php"?>
 </header>
 <?php if(!isset($_GET["searchedMovie"])):
-    $fullResults = get_top_n_recommandation(5)?>
+    $fullResults = get_top_n_recommandation($_SESSION["userId"]+1)?>
 <main class="indexMain">
     <div class="indexRecommandation">
             <a href="lecture.php?title=<?php echo $fullResults["1"]["id"]?>"><img src="<?php echo $fullResults[1]["imagePortrait"] ?>" alt="affiche film recommandé" class="indexAfficheFilmRecommande"></a>
@@ -178,7 +181,8 @@ include "get_top_n_recommandation.php"?>
         </div>
     </div>
 </main>
-<?php endif?>
+<?php endif;
+endif?>
 <footer class="indexFooter">
    <?php include "modules/footer.php"?>
 </footer>

@@ -3,8 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="c72d113d-fad3-4c2d-aeef-27525dda756a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/getMovieInfo.php" beforeDir="false" afterPath="$PROJECT_DIR$/getMovieInfo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/class/Db.php" beforeDir="false" afterPath="$PROJECT_DIR$/class/Db.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/connectUserTreatment.php" beforeDir="false" afterPath="$PROJECT_DIR$/connectUserTreatment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/connexionTreatment.php" beforeDir="false" afterPath="$PROJECT_DIR$/connexionTreatment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/base" beforeDir="false" afterPath="$PROJECT_DIR$/database/base" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lecture.php" beforeDir="false" afterPath="$PROJECT_DIR$/lecture.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lectureTreatment.php" beforeDir="false" afterPath="$PROJECT_DIR$/lectureTreatment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profil.php" beforeDir="false" afterPath="$PROJECT_DIR$/profil.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

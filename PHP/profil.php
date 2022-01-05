@@ -22,7 +22,7 @@ include "class/Db.php";?>
             <div class="profilUser">  
             <p class='username'><?php echo $value["username"]?></p>
                 <form action="connectUserTreatment.php" method="post" enctype="multipart/form-data">
-                    <input type="hidden" name="username" value="<?php echo $value["username"]?>">
+                    <input type="hidden" name="userId" value="<?php echo $value["idUser"]?>">
                     <button type="submit">Connexion</button>
                 </form>
                 <form action="supprUserTreatment.php" method="post" enctype="multipart/form-data">

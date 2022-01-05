@@ -8,5 +8,7 @@ if($result == false){
 }
 else{
     $_SESSION["connectedId"] = $result;
+    $result = $db->getUsersFromAccountId($_SESSION["connectedId"]);
+    $_SESSION["userId"] = $result[0]["idUser"];
     header("Location: ../index.php");
 }

@@ -510,7 +510,7 @@ button{
     align-items: center;
 }
 
-.inputRadio:checked+label:before{
+.inputRadio:checked+label:before, .inputRadio:hover+label:before{
     content: "";
     position: absolute;
     width: 12px;

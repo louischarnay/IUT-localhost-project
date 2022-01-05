@@ -78,6 +78,8 @@ session_start();?>
                             <label for="inputRadio4" class="labelRadio"><ion-icon name="star-outline" class="etoile"></ion-icon></label>
                             <input id="inputRadio5" class="inputRadio" type="radio" name="rate" value=5 required="required">
                             <label for="inputRadio5" class="labelRadio"><ion-icon name="star-outline" class="etoile"></ion-icon></label>
+                            <input type="hidden" name="movie" value="<?php echo $result["title"]?>">
+                            <input type="hidden" name="movieId" value="<?php echo $_GET["title"]?>">
                             <button type="submit" id="buttonSendRate">Envoyer</button>
                         </form>
                     </div>
@@ -89,7 +91,14 @@ session_start();?>
                         <td><b>Genre :</b></td>
                         <td><?php
                             $tmp=(array)$result["genres"][0];
-                            echo $tmp["name"]?></td>
+                            echo $tmp["name"];
+                            if(sizeof((array)$result["genres"])>0){
+                                for ($cpt=1;$cpt<sizeof((array)$result["genres"]);$cpt++){
+                                    $tmp=(array)$result["genres"][$cpt];
+                                    echo " / ".$tmp["name"];
+                                }
+                            }
+                            ?></td>
                     </tr>
                     <tr>
                         <td><b>Date de sortie :</b></td>
