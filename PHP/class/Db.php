@@ -45,6 +45,13 @@ function __construct(){
     return $sth->fetchAll();
  }
 
+ public function getUserId(string $accountname){
+    $sth = $this->pdo->prepare("SELECT idAccount FROM Accounts WHERE email= :email");
+    $sth->execute(["email" => $accountname]);
+    $result = $sth->fetch();
+    return $result;
+}
+
  public function getUser(string $accountId, string $name){
     $sth = $this->pdo->prepare("SELECT * FROM Users WHERE username= :name AND accountId= :accountId");
     $sth->execute(["accountId" => $accountId, "name" => $name]);

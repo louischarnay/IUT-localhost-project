@@ -83,7 +83,7 @@ print("training...")
 testset = data.build_full_trainset().build_anti_testset()
 predictions = algo.test(testset)
 
-top_n = get_top_n(predictions, n=20)
+top_n = get_top_n(predictions, n=30)
 
 # Print the recommended items for each user
 file=open("recommendation.csv",'w')

@@ -91,9 +91,11 @@ include "get_top_n_recommandation.php"?>
         </div>
         <div class="indexLigneCategorie">
             <div class="indexLigneFilms">
-                <?php for($cpt=2; $cpt < 11; $cpt++):?>
+                <?php for($cpt=2; $cpt < 11; $cpt++):
+                    if($fullResults[$cpt]['id']!=1):?>
                 <a href="lecture.php?title=<?php echo $fullResults[$cpt]['id']?>" class="image"><img src="<?php echo $fullResults[$cpt]["imagePortrait"] ?>" alt="affiche film" class="indexAfficheFilm"></a>
-            <?php endfor?>
+            <?php endif;
+            endfor?>
             </div>
         </div>
     </div>
