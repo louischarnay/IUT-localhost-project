@@ -6,7 +6,7 @@
   </a>
 </p>
 
-> Recomandation system with web interface based on general streaming website functions.
+> Recommandation system with web interface based on general streaming website functions.
 
 ## Authors
 
