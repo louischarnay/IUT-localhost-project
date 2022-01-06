@@ -21,7 +21,7 @@ include "get_top_n_recommandation.php"?>
     $fullResults = get_top_n_recommandation($_SESSION["userId"]+1)?>
 <main class="indexMain">
     <div class="indexRecommandation">
-            <a href="lecture.php?title=<?php echo $fullResults["1"]["id"]?>"><img src="<?php echo $fullResults[2]["imagePortrait"] ?>" alt="affiche film recommandé" class="indexAfficheFilmRecommande"></a>
+            <a href="lecture.php?title=<?php echo $fullResults["2"]["id"]?>"><img src="<?php echo $fullResults[2]["imagePortrait"] ?>" alt="affiche film recommandé" class="indexAfficheFilmRecommande"></a>
         <div class="indexDescriptionFilm">
             <div class="indexH2Etoiles">
                 <h2><?php echo $fullResults[2]["title"]?></h2>
