@@ -21,12 +21,12 @@ include "get_top_n_recommandation.php"?>
     $fullResults = get_top_n_recommandation($_SESSION["userId"]+1)?>
 <main class="indexMain">
     <div class="indexRecommandation">
-            <a href="lecture.php?title=<?php echo $fullResults["1"]["id"]?>"><img src="<?php echo $fullResults[1]["imagePortrait"] ?>" alt="affiche film recommandé" class="indexAfficheFilmRecommande"></a>
+            <a href="lecture.php?title=<?php echo $fullResults["1"]["id"]?>"><img src="<?php echo $fullResults[2]["imagePortrait"] ?>" alt="affiche film recommandé" class="indexAfficheFilmRecommande"></a>
         <div class="indexDescriptionFilm">
             <div class="indexH2Etoiles">
-                <h2><?php echo $fullResults[1]["title"]?></h2>
+                <h2><?php echo $fullResults[2]["title"]?></h2>
                 <div class="indexEtoilesH2">
-                    <?php $rate = $fullResults[1]["averageNote"] / 2;
+                    <?php $rate = $fullResults[2]["averageNote"] / 2;
                     if($rate >=0.5):?>
                         <ion-icon name="star" class="etoile"></ion-icon>
                     <?php else:?>
@@ -52,7 +52,7 @@ include "get_top_n_recommandation.php"?>
                 </div>
             </div>
             <div class="indexTexteRecommande">
-                    <p><?php echo $fullResults[1]["description"]?></p>
+                    <p><?php echo $fullResults[2]["description"]?></p>
             </div>
         </div>
     </div>
@@ -61,7 +61,10 @@ include "get_top_n_recommandation.php"?>
             <h3>VOS FILMS RECOMMANDES</h3>
             <div class="indexEtoiles">
                 <?php $rate = 0;
-                for($cpt=2; $cpt < 11; $cpt++) {
+                for($cpt=2; $cpt < 15; $cpt++) {
+                    if ($fullResults[$cpt]["title"] == '1'){
+                        $cpt++;
+                    }
                     $rate += $fullResults[$cpt]["averageNote"];
                 }
                 $rate = $rate / 18;
@@ -91,7 +94,7 @@ include "get_top_n_recommandation.php"?>
         </div>
         <div class="indexLigneCategorie">
             <div class="indexLigneFilms">
-                <?php for($cpt=2; $cpt < 11; $cpt++):
+                <?php for($cpt=2; $cpt < 15; $cpt++):
                     if($fullResults[$cpt]['id']!=1):?>
                 <a href="lecture.php?title=<?php echo $fullResults[$cpt]['id']?>" class="image"><img src="<?php echo $fullResults[$cpt]["imagePortrait"] ?>" alt="affiche film" class="indexAfficheFilm"></a>
             <?php endif;
@@ -104,7 +107,10 @@ include "get_top_n_recommandation.php"?>
             <h3>ILS PEUVENT AUSSI VOUS PLAIRE</h3>
             <div class="indexEtoiles">
                 <?php $rate = 0;
-                for($cpt=11; $cpt < 20; $cpt++) {
+                for($cpt=16; $cpt < 30; $cpt++) {
+                    if ($fullResults[$cpt]["title"] == '1'){
+                        $cpt++;
+                    }
                     $rate += $fullResults[$cpt]["averageNote"];
                 }
                 $rate = $rate / 18;
@@ -134,7 +140,10 @@ include "get_top_n_recommandation.php"?>
         </div>
         <div class="indexLigneCategorie">
             <div class="indexLigneFilms">
-                <?php for($cpt=11; $cpt < 20; $cpt++): ?>
+                <?php for($cpt=16; $cpt < 30; $cpt++): 
+                    if ($fullResults[$cpt]["title"] == '1'){
+                        $cpt++;
+                    }?>
                     <a href="lecture.php?title=<?php echo $fullResults[$cpt]["id"]?>" class="image"><img src="<?php echo $fullResults[$cpt]["imagePortrait"] ?>" alt="affiche film" class="indexAfficheFilm"></a>
                 <?php endfor?>
             </div>
