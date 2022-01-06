@@ -8,7 +8,7 @@
 
 > Recomandation system with web interface based on general streaming website functions.
 
-## Author
+## Authors
 
 👤 **Louis Charnay**
 
