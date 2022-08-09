@@ -6,7 +6,7 @@
   </a>
 </p>
 
-> Recommandation system with web interface based on general streaming website functions.
+> Recommandation system with web interface based on general streaming website functions using TMDB API.
 
 ## Authors
 
